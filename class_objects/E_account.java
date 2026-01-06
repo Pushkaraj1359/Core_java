@@ -1,6 +1,6 @@
 class Account{
-    int accountNumber;
-    double balance;
+    private int accountNumber;
+    private double balance;
 
     public Account(int accountNumber, double balance) {
         this.accountNumber=accountNumber;
@@ -12,7 +12,7 @@ class Account{
     }
 
     double getBalance(){
-        return balance;
+        return balance; 
     }
 
     void setBalance(double balance){
