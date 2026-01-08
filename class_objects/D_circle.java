@@ -23,10 +23,10 @@ class Circle{
 
     public String getColor(){
         return color;
-    }
-
+    } 
+    
     public double getArea(){
-        return 3.14*radius*radius;
+        return 3.14*radius*radius;   
     }
 
 }   

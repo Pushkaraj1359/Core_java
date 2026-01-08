@@ -2,7 +2,7 @@ package class_objects;
 
 class Demo{
     int a=10;
-    String b="Pushkaraj_";
+    String b="Pushkaraj";
 
 
     void Show(){
@@ -13,7 +13,7 @@ class Demo{
 
 public class A_demo {
     public static void main(String[] args) {
-        Demo r=new Demo();
+        Demo r = new Demo();
         r.Show();
     }
 }

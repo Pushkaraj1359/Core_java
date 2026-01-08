@@ -65,7 +65,7 @@ class country{
     String capital;
 
     country() {
-        name = "India";
+        name = "India"; 
         population = 12343243;
         capital = "Delhi";
     }
