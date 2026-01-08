@@ -1,6 +1,6 @@
 class Player{
-    String name;
-    int runs;
+    private String name;
+    private int runs;
 
     Player(String name){
         this.name=name;
