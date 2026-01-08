@@ -2,7 +2,7 @@ package class_objects;
 
 class Demo{
     int a=10;
-    String b="Pushkaraj";
+    String b="Pushkaraj_";
 
 
     void Show(){
