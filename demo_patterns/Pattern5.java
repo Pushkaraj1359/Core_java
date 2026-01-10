@@ -16,7 +16,7 @@
 //                 System.out.print(" ");
 //             }
 
-//             //  inner loop ---> space print
+//             //  inner loop ---> star print
 //             for(int j=1; j<=i;j++){
 //                 System.out.print("*");
 //             }
