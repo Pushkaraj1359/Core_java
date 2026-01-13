@@ -326,6 +326,16 @@
 
 
 
+// A
+// bb
+// CCC
+// dddd
+// EEEEE
+// dddd
+// CCC
+// bb
+// A
+
 public class Just { 
     public static void main(String[] args){
         int n = 5;
