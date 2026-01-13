@@ -224,12 +224,19 @@ public class Just {
     public static void main(String[] args){
         int n=5;
         for( int i=1;i<=(n*2)-1;i++){
-            if (true) {
-                
+            if (i<=n) {
+                for(int j=1;j<=i;j++){
+                    System.out.print(i);
+                }
             }
             else{
-                
+                int c = (n*2)-i;
+                for( int j=c;j>=1;j--){
+                    System.out.print(c);
+                    c--;
+                }
             }
+        System.out.println();
         }
     }
 }
