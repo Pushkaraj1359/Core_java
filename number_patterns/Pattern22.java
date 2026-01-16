@@ -8,6 +8,7 @@ package number_patterns;
 
 public class Pattern22 {
     public static void main(String[] args) {
+        
         int n = 5;
         int count = 15;
         int value = 2;
@@ -17,9 +18,8 @@ public class Pattern22 {
                 System.out.print(c+"\t");
                 c++;
             }
-            count = count -value;
+            count = count - value;
             value++;
-            
             System.out.println();
         }
     }

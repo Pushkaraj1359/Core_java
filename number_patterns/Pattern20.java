@@ -8,8 +8,9 @@ package number_patterns;
 
 public class Pattern20 {
     public static void main(String[] args) {
+        int n = 5;
         int count = 15;
-        for(int i=1;i<=5;i++){
+        for(int i=1;i<=n;i++){
             int c = count;
             for(int j=1;j<=i;j++){
                 System.out.print(c+"\t");
