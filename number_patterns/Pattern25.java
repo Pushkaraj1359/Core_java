@@ -9,8 +9,8 @@ package number_patterns;
 public class Pattern25 {
     public static void main(String[] args) {
         int n = 5;
-        int count = 15;
-        int value = n-1;
+        int value = n*(n+1)/2;//15
+        int count = value;
         for(int i=1;i<=n;i++){
             int c = count;
             for(int j=1;j<=i;j++){
