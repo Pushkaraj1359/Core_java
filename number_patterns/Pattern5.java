@@ -8,12 +8,12 @@ package number_patterns;
 
 public class Pattern5 {
     public static void main(String[] args) {
-        int count = 15;
-        for(int i=1;i<=5;i++){
-            for(int j=1;j<=i;j++){
-                System.out.print(count-- +"\t");
-            }
-            System.out.println();
-        }
+        // int count = 15;
+        // for(int i=1;i<=5;i++){
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print(count-- +"\t");
+        //     }
+        //     System.out.println();
+        // }
     }
 }
