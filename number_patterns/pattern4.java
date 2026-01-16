@@ -5,7 +5,6 @@
 // 11 12 13 14 15
 
 package number_patterns;
-
 public class pattern4 {
     public static void main(String[] args){
         int count =1;
@@ -17,4 +16,4 @@ public class pattern4 {
         }
         
     }
-}
+} 
