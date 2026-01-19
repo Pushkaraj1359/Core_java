@@ -48,8 +48,11 @@ public class A_CountNumDigits {
         System.out.println("enter any number");
         int num = sr.nextInt();
         for(int i=1;i<=10;i++){
-            int resuit = num * i;
+            int resuit = num * i;// 10*1=10
             System.out.println(num+ " * "+ i+" = " +resuit);
+
+
+
         }
     }
 }
