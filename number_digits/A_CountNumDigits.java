@@ -39,6 +39,21 @@
 // }
 
 
+package number_digits;
+import java.util.Scanner;
+
+public class A_CountNumDigits {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+        System.out.println("enter any number");
+        int num = sr.nextInt();
+        for(int i=1;i<=10;i++){
+            int resuit = num * i;
+            System.out.println(num+ " * "+ i+" = " +resuit);
+        }
+    }
+}
+
 
 
 
