@@ -50,9 +50,6 @@ public class A_CountNumDigits {
         for(int i=1;i<=10;i++){
             int resuit = num * i;// 10*1=10
             System.out.println(num+ " * "+ i+" = " +resuit);
-
-
-
         }
     }
 }
