@@ -42,5 +42,105 @@ public class B_sum_array {
                 System.out.println(arr[i]);
             }
         }
+
+
+        int sum2 = 0;
+        int count = 0 ;
+        for(int x : arr){
+            sum2 = sum2 + x;
+            count++;
+        }
+        System.out.println("the sum of elements by using forEach loop = "+ sum2);
+
+        int ave = sum2/count;
+        System.out.println("the average  = "+ave);
+
+        
+
+
+
+        // shift first element to last 
+        // 11 22 33 44 55
+        // 22 33 44 55 11
+
+    
+
+
+
+        // last to first
+        // int a[]={1 ,2 ,3, 4 ,5};
+
+        // int temp = a[a.length-1];
+
+        // for(int i=a.length-1;i>0;i--){
+        //     a[i]=a[i-1];
+
+            
+        // }
+        // a[0]=temp;
+
+        // for(int i=0;i<a.length;i++){
+            
+        //     System.out.println(a[i]);
+
+        // }
+
+
+
+        /*int a[]={10 ,20 ,30, 40 ,50};
+        //int temp = a[a.length-1];
+        for(int i=a.length-1;i>1;i--){      
+        }
+        int temp1=a[0];
+        a[0]=a[a.length-1];
+        a[a.length-1]=temp1;
+        for(int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+        }*/
+        
+        
+        int arrrr[]={10 ,20 ,30, 40 ,50};
+        //int temp = a[a.length-1];
+        for(int i=arrrr.length-1;i>1;i--){      
+        }
+        arrrr[0]=arrrr[0] + arrrr[arrrr.length-1];
+        arrrr[arrrr.length-1] = arrrr[0] - arrrr[arrrr.length-1];
+        arrrr[0] = arrrr[0] - arrrr[arrrr.length-1];
+
+        for(int i = 0; i<arrrr.length; i++){
+            System.out.println(arrrr[i]);
+        } 
+
+
+        
+
+        // x= x+y;
+        // y=x-y;
+        // x=x-y;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // important 
+        // swap without third variable
     }
 }
