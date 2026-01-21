@@ -51,7 +51,6 @@ public class B_sum_array {
             count++;
         }
         System.out.println("the sum of elements by using forEach loop = "+ sum2);
-
         int ave = sum2/count;
         System.out.println("the average  = "+ave);
 
@@ -61,7 +60,7 @@ public class B_sum_array {
 
 
 
-            // shift first element to last 
+        // shift first element to last 
         // 11 22 33 44 55
         // 22 33 44 55 11
 
