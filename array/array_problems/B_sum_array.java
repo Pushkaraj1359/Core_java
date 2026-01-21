@@ -43,7 +43,6 @@ public class B_sum_array {
             }
         }
 
-
         int sum2 = 0;
         int count = 0 ;
         for(int x : arr){
