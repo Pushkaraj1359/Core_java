@@ -55,11 +55,13 @@ public class B_sum_array {
         int ave = sum2/count;
         System.out.println("the average  = "+ave);
 
+
+
         
 
 
 
-        // shift first element to last 
+            // shift first element to last 
         // 11 22 33 44 55
         // 22 33 44 55 11
 
