@@ -102,7 +102,9 @@ int arr[] = new int [size];
 
 
 
-
+//Math.log();
+//Math.pow();
+//Math.floor();
 
 
 

@@ -19,7 +19,8 @@ public class array01 {
 
         // Method ref
         // Only calls a single method directly
-        // Arrays.stream(arr).forEach(System.out::println);           
+        // Arrays.stream(arr).forEach(System.out::println);    
+        // System.out is an 
         
         
         // Lambda expression
