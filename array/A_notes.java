@@ -95,20 +95,12 @@ int arr[] = new int [size];
         display(arr);
 
 
-
 #Program04
-
-
-
 
 
 //Math.log();
 //Math.pow();
 //Math.floor();
-
-
-
-
 
 
 
@@ -120,6 +112,35 @@ todays work
         *at the time program execution memory get..according to data
         * dynamic memory allocation is better then static 
         CAUSE something related to the memory uses..
+
+
+
+===================>>>>>>>>>>>>>>>>>>>>>==============================>>>>>>>>>>>>>>>>>>>>===========
+===================>>>>>>>>>>>>>>>>>>>>>==============================>>>>>>>>>>>>>>>>>>>>===========
+
+
+#2-D-array:- 
+        its a collection of 1-d array called as 2-d array...
+
+int benches[][]=new int [5][3];
+benches is a 2-d array which has 5 1-d array and each 1-d array has 3 elements are type int...
+
+
+Examples:- 
+
+Program01:- 
+
+
+
+
+===================>>>>>>>>>>>>>>>>>>>>>==============================>>>>>>>>>>>>>>>>>>>>===========
+===================>>>>>>>>>>>>>>>>>>>>>==============================>>>>>>>>>>>>>>>>>>>>===========
+
+#- MultiDimensional-Array :-
+
+
+
+
 
 
 
