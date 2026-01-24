@@ -40,7 +40,6 @@ public class sumOfArrayElements {
     static int averageOfArrayElement(int sum, int count){
         int average = sum / count;
         System.out.println("the average of array elements = "+ sum +" / "+ count +" = "+average);
-        getAverage(average);
         return average;
     }
 
@@ -64,11 +63,24 @@ public class sumOfArrayElements {
 
     // Elements Greater than Average
     static void getArray(int A[]){
+        int s = 0;
+        int c = 0;
+        System.err.print("the elements are greater then average = ");
         for(int i=0;i<A.length;i++){
+            s = s + A[i];
+            c++;
+        }
+        for(int i=0;i<A.length;i++){
+            int ave = s/c;
+            if(A[i]>ave){
+                System.out.print(A[i]+" ");
+            }
             
         }
     }
 
+
+    
     public static void main(String[] args) {
         int size;
         Scanner scanner = new Scanner(System.in);
