@@ -1,4 +1,4 @@
-// *****
+
 // *****
 // *****
 // *****
@@ -368,35 +368,57 @@
 // }
 
 
-public class Just { 
+// public class Just { 
+//     public static void main(String[] args){
+//         int n = 5;
+//         for(int i=1;i<=(n*2)-1;i++){
+//             if(i<=n){
+//                 for(int j=1;j<=i;j++){
+//                     if(j%2==0){
+//                         System.out.print((char)(j+96));
+//                     }
+//                     else{
+//                         System.out.print((char)(j+64));
+//                     }
+//                 }
+//                 System.out.println();
+//             }
+//             else{
+//                 for(int j=(2*n)-i;j>=1;j--){
+//                     if(j%2==0){
+//                         System.out.print((char)(j+96));
+//                     }
+//                     else{
+//                         System.out.print((char)(j+46));
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+public class Just {
     public static void main(String[] args){
-        int n = 5;
-        for(int i=1;i<=(n*2)-1;i++){
-            if(i<=n){
-                for(int j=1;j<=i;j++){
-                    if(j%2==0){
-                        System.out.print((char)(j+96));
-                    }
-                    else{
-                        System.out.print((char)(j+64));
-                    }
-                }
-                System.out.println();
-            }
-            else{
-                for(int j=(2*n)-i;j>=1;j--){
-                    if(j%2==0){
-                        System.out.print((char)(j+96));
-                    }
-                    else{
-                        System.out.print((char)(j+46));
-                    }
-                }
-            }
-        }
+        // int n=5;
+        // int value = n*(n+1)/2;//15
+        // int count=value-(2*n);//5
+
+        // for(int i=1;i<=n;i++){
+        //     int cnt = count;
+        //     for(int j=1,p=5;j<=i;j++,p--){
+        //         System.out.print(cnt+" ");
+        //         cnt = cnt + p ;
+                
+        //     }
+        //     count--;
+        //     System.out.println();
+        // }
+
+        
+
     }
 }
-
 
 
 
