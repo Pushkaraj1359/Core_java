@@ -15,16 +15,27 @@ public class firstElementToLast {
         }
 
         System.out.println();
-        int firstElement = A[0];
 
-        for(int i=0;i<A.length-1;i++){
-            A[i]=A[i+1];
-        }
-        A[A.length-1]=firstElement;
-        System.out.print("the updated array : ");
-        for(int i=0;i<A.length;i++){
-            System.out.print(A[i]+" ");
-        }
+        // int firstElement = A[0];
+        // for(int i=0;i<A.length-1;i++){
+        //     A[i]=A[i+1];
+        // }
+        // A[A.length-1]=firstElement;
+        // System.out.print("the updated array : ");
+        // for(int i=0;i<A.length;i++){
+        //     System.out.print(A[i]+" ");
+        // }
+
+
+        // without using third variable
+        // for(int i = 0; i < A.length - 1; i++){
+        //     A[i] = A[i] + A[i+1] - (A[i+1] = A[i]);  //one-line arithmetic/XOR version
+        // }
+        // System.out.print("the updated array : ");
+        // for(int i=0;i<A.length;i++){
+        //     System.out.print(A[i]+" ");
+        // }
+
     }
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
