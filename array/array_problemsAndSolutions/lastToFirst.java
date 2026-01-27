@@ -28,7 +28,7 @@ public class lastToFirst {
         // }
         
         
-        
+
         //Using XOR (no temp variable, safe)
         for(int i = A.length-1; i > 0; i--){
             A[i] = A[i] ^ A[i-1];
@@ -40,7 +40,6 @@ public class lastToFirst {
         for(int i=0;i<A.length;i++){
             System.out.print(A[i]+" ");
         }
-
     }
     public static void main(String[] args) {
 
