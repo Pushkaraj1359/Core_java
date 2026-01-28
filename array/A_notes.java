@@ -128,8 +128,38 @@ benches is a 2-d array which has 5 1-d array and each 1-d array has 3 elements a
 
 Examples:- 
 
-Program01:- 
+Program01 :- 
 
+class demo{
+    static void displayArray(int B[][]){
+        for(int i=0;i<B.length;i++){
+            for(int j=0;j<B[i].length;j++){
+                System.out.println(B[i][j]+" ");
+            }
+        }
+    }
+    public static void main(String[] args){
+        int B[][]={{1,2},{1,2,3},{1,2,3,4}};
+        displayArray(B);
+    }
+}
+
+
+
+
+
+
+
+Assignments 👍
+    Write a Java program to add two matrices.
+    Write a Java program to subtract two matrices.
+    Write a Java program to perform Scalar matrix multiplication.
+    
+    Write a Java program to check whether two matrices are equal or not.
+    Write a Java program to find the sum of main diagonal elements of a matrix.
+    Write a Java program to find the sum of minor 
+    diagonal elements of a matrix.
+    Write a Java program to find the sum of each row and column of a matrix.
 
 
 
@@ -137,6 +167,8 @@ Program01:-
 ===================>>>>>>>>>>>>>>>>>>>>>==============================>>>>>>>>>>>>>>>>>>>>===========
 
 #- MultiDimensional-Array :-
+
+
 
 
 

@@ -39,8 +39,8 @@ public class lastToFirstFirstToLast {
         for(int i=0;i<A.length;i++){
             System.out.print(A[i]+" ");
         }
-
     }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter array size");

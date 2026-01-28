@@ -8,7 +8,7 @@ class Data{
         System.out.println("num"+num+" "+"float"+fl+" "+"letter"+letter);
     }
 }
-+
+
 
 
 public class App {
