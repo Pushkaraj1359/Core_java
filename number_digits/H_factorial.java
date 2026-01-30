@@ -24,5 +24,5 @@ public class H_factorial {
             num--;
         }
         System.out.println(fact);
-    }
+    }   
 }
