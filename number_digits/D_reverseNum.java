@@ -1,15 +1,18 @@
 package number_digits;
 
 public class D_reverseNum {
-    public static void main(String[] args) {
-        int number = 1234;
-        int reverse = 0 ;
-        while(number>0){
-            int digit = number % 10;
+    static int reverseDigit(int num){
+        int reverse = 0;
+        while(num>0){
+            int digit = num % 10;
             reverse = reverse * 10 + digit;
-            number  = number / 10;
+            num = num / 10;
         }
-        System.out.println(reverse);
+        return reverse;
+    }
+    public static void main(String[] args) {
+        int num = 1234;
+        System.out.println(reverseDigit(num));
     }
 }              
 

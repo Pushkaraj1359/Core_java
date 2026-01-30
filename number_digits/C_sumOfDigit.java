@@ -1,14 +1,17 @@
 package number_digits;
 
 public class C_sumOfDigit{
-    public static void main(String[] args) {
-        int number = 1234;
+    static int countSum(int num){
         int sum = 0;
-        while(number>0){
-            int temp = number % 10;
+        while(num>0){
+            int temp = num % 10;
             sum = sum + temp;
-            number = number / 10;
+            num = num /10;
         }
-        System.out.println(sum);
+        return sum;
+    }
+    public static void main(String[] args) {
+        int num = 1234;
+        System.out.println(countSum(num));
     }
 }
