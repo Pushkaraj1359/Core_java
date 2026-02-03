@@ -20,19 +20,21 @@ package class_objects;
 // }
 
 
-class Details{
-    int rollNo = 50;
-    String name  = "Pushkaraj";
+class Demo{
+    int roll = 50;
+    String name = "pushkaraj";
 
-    void showDetails(){
-        System.out.println("rollNo :"+rollNo);
-        System.out.println("name : "+name);
+    void show(){
+        System.out.println(roll);
+        System.out.println(name);
     }
+
 }
 
 public class A_demo{
-    public static void main(String[] args){
-        Details r = new Details();
-        r.showDetails();
+    public static void main(String[] args) {
+        Demo r = new Demo();
+        r.show();
     }
 }
+
