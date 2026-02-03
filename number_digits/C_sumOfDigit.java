@@ -2,11 +2,11 @@ package number_digits;
 
 public class C_sumOfDigit{
     static int countSum(int num){
-        int sum = 0;
+        int sum =0 ;
         while(num>0){
-            int temp = num % 10;
-            sum = sum + temp;
-            num = num /10;
+            int digit = num % 10;
+            sum = sum + digit;
+            num = num / 10;
         }
         return sum;
     }

@@ -2,16 +2,16 @@ package number_digits;
 
 public class K_appendSum {
     public static void main(String[] args) {
-        int number = 1234;
-        int tem = number;
-        int sum = 0;
-
-        while(number>=1){
-            int digit = number % 10;
+        int num = 123;
+        int temp = num;
+        int sum = 0 ;
+        while(num>0){
+            int digit = num % 10;
             sum = sum + digit;
-            number = number / 10;
+            num = num / 10;
         }
-        int resuit = tem * 100 + sum;
-        System.out.print(resuit);
+        int digitCount=String.valueOf(sum).length();
+        int resuit = temp * (int)Math.pow(10, digitCount)+sum;
+        System.out.println(resuit);
     }
 }

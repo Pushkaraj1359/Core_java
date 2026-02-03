@@ -27,7 +27,6 @@ public class A_CountNumDigits {
             count++;
         }
         return count;
-
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,18 +1,18 @@
 package number_digits;
 
 public class E_numPalindrome {
-    static void palindrome(int num){
+    static void   palindrome(int num){
         int reverse = 0;
         int original = num;
         while(num>0){
             int digit = num % 10;
-            reverse = reverse * 10 + digit ;
+            reverse = reverse * 10 + digit;
             num = num / 10;
         }
-        if(reverse==original){
-            System.out.println("this is an palindrome");
+        if(reverse == original){
+            System.out.println("num is palindrome : ");
         }else{
-            System.out.println("this is not an palindrome : ");
+            System.out.println("num is not palindrome : ");
         }
     }
     public static void main(String[] args) {

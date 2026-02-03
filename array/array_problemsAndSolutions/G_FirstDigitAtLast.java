@@ -32,7 +32,7 @@ public class G_FirstDigitAtLast {
 
             while(first>=10){
                 first /=10;
-                pow*=10;
+                pow*=10;   // pow = pow * 10;
             }
             int remaining = num % pow;
             arr[i]=remaining*10+first;

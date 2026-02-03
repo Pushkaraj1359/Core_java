@@ -36,7 +36,7 @@ public class sumOfArrayElements {
         return sum ;
     }
 
-    // the average of array element
+    // the average of array element...
     static int averageOfArrayElement(int sum, int count){
         int average = sum / count;
         System.out.println("the average of array elements = "+ sum +" / "+ count +" = "+average);
@@ -61,6 +61,7 @@ public class sumOfArrayElements {
         System.out.println("the sum of even elements ="+add);
     }
 
+
     // Elements Greater than Average
     static void getArray(int A[]){
         int s = 0;
@@ -74,8 +75,7 @@ public class sumOfArrayElements {
             int ave = s/c;
             if(A[i]>ave){
                 System.out.print(A[i]+" ");
-            }
-            
+            } 
         }
     }
 
