@@ -1,8 +1,6 @@
 package class_objects;
 
 // class Demo{
-    
-//     int a=10;                             // instance variable..
 //     String name="Pushkaraj";
 
 
@@ -19,22 +17,19 @@ package class_objects;
 //     }
 // }
 
-
 class Demo{
-    int roll = 50;
     String name = "pushkaraj";
+    int a = 10;
 
-    void show(){
-        System.out.println(roll);
-        System.out.println(name);
+    void showDetails(){
+        System.out.println("name : "+name);
+        System.out.println("a : "+a);
     }
-
 }
-
 public class A_demo{
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Demo r = new Demo();
-        r.show();
+        r.showDetails();
     }
 }
 

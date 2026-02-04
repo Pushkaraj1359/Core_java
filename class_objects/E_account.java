@@ -21,12 +21,12 @@ class Account{
 
     void credit(double amount){
         balance=balance+amount;
-        System.out.println("the credited amount is = "+balance);
+        System.out.println("total balance = "+balance);
     }
 
     void debit(double amount){
         balance=balance-amount;
-        System.out.println("the debited amount is = "+balance);
+        System.out.println("total balance = "+balance);
     }
 
     void showDetails(){
