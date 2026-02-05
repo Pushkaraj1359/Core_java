@@ -21,7 +21,7 @@ public abstract  class Shape {
 
     public boolean isFilled(){
         return filled;
-        
+
     }
 
     public void setFilled(Boolean filled){
@@ -33,6 +33,6 @@ public abstract  class Shape {
     public abstract double getPerimeter();
 
     public String toString(){
-        return "[color = "+color + "filled = "+filled + "]";
+        return "[color = "+color + ", filled = "+filled + "]";
     }
 }

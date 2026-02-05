@@ -32,6 +32,6 @@ public class Circle extends Shape {
     }
 
     public String toString(){
-        return "Circle[Shape[Color ="+super.color + ", filled ="+super.filled+", radius ="+radius;
+        return "Circle["+super.toString() +", radius = "+radius+" ]";
     }
 }
