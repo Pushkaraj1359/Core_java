@@ -1,4 +1,4 @@
-package opps.project01;
+package opps.inheritance.project01;
 
 public abstract  class Shape {
     protected String color = "red";

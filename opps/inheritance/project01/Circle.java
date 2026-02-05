@@ -1,4 +1,4 @@
-package opps.project01;
+package opps.inheritance.project01;
 
 public class Circle extends Shape {
     protected double radius = 1.0;
