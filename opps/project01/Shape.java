@@ -21,6 +21,7 @@ public abstract  class Shape {
 
     public boolean isFilled(){
         return filled;
+        
     }
 
     public void setFilled(Boolean filled){
