@@ -1,3 +1,4 @@
+package class_objects;
 class Id{
     String name;
     int id ;
@@ -9,7 +10,11 @@ class Id{
         batch = "JAP";
     }
 
-    
+    public void setDetails(String name, int id, String batch){
+        this.name=name;
+        this.id=id;
+        this.batch=batch;
+    }
     String getname(){
         return name;
     }
@@ -18,7 +23,7 @@ class Id{
         return id;
     }
     
-    String batch(){
+    String getBatch(){
         return batch;
     }
     
@@ -43,6 +48,9 @@ class Id{
 
 public class F_demo {
     public static void main(String[] args) {
-        
+        Id r=new Id();
+        r.setDetails("pushu",01,"jap86");
+        r.showDetails();
+        System.out.println(r.getBatch());
     }
 }
