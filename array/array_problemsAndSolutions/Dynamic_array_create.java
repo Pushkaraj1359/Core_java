@@ -43,7 +43,5 @@ public class Dynamic_array_create {
 
         int A[]={11,22,33,44,55};
         backwardArray(A);
-
-
     }
 }
