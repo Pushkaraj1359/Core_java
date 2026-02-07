@@ -17,4 +17,5 @@ public class E_LastDigitArray {
             System.out.print(x+" ");
         }
     }
+    
 }
