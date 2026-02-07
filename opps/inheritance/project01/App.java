@@ -15,6 +15,7 @@ public class App {
         System.out.println(" Rectangle area = "+r1.getArea());
         System.out.println("Rectangle perimeter ="+r1.getPerimeter());
 
+        
         Square sq1=new Square(5.2,"white",true);
         System.out.println(sq1);
         System.out.println("Square Area = "+sq1.getSide());
