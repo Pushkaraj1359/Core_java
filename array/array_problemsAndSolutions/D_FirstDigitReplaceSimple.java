@@ -10,20 +10,18 @@ public class D_FirstDigitReplaceSimple {
         }
 
          // Replace each element with its first digit
-        for(int i=0;i<arr.length;i++){
-            int num = arr[i];
-            while(num>10){
-                num /= 10;   // keep dividing by 10 
-            }
-            arr[i]=num;      // replace with first digit
-        }
-        System.out.println();
+        // for(int i=0;i<arr.length;i++){
+        //     int num = arr[i];
+        //     while(num>10){
+        //         num /= 10;   // keep dividing by 10 
+        //     }
+        //     arr[i]=num;      // replace with first digit
+        // }
+        // System.out.println();
 
-        System.out.println("the updated array : ");
-        for(int num : arr){
-            System.out.print(num+" ");
-        }
-
-
+        // System.out.println("the updated array : ");
+        // for(int num : arr){
+        //     System.out.print(num+" ");
+        // }
     }
 }

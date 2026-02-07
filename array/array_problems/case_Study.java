@@ -37,7 +37,6 @@ public class case_Study {
             else{
                 A[i]=-2;
             }
-
         }
     }
     
