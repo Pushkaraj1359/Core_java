@@ -1,6 +1,6 @@
 package exception_part01;
 
-class App {
+class Propagation {
 
     public static void f1() {
         System.out.println("IN F1");
