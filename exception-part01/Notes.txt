@@ -74,5 +74,5 @@ If user enters wrong PIN:
     Without exception handling → App crashes
     With exception handling → Show message “Invalid PIN, try again”
 
-That is reliability
+That is reliability.
             
