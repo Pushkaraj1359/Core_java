@@ -50,8 +50,6 @@ class Employee{
     public double getSalary(){
         return salary;
     }
-
-
 }
 
 public class Emplo {

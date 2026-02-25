@@ -20,7 +20,7 @@
     }
 
 // output
-    // Static block
+    // Static block (onces)
     // Main method
     // Instance block
     // Constructor
