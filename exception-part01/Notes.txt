@@ -1,0 +1,78 @@
+Exception :- 
+            Exception is an unwanted or unexpected event that occurs during program execution 
+            and stops the normal flow of the program.
+
+            Exception handling improves program reliability and prevents abnormal termination.
+            Let’s prove it with example
+
+            Without Exception Handling (Program Crashes)
+            public class WithoutHandling {
+                public static void main(String[] args) {
+                    int a = 10;
+                    int b = 0;
+
+                    int result = a / b;   // Exception here
+                    System.out.println("Result: " + result);
+
+                    System.out.println("Program End");
+                }
+            }
+            Output:  
+            Exception in thread "main" java.lang.ArithmeticException: / by zero
+
+            👉 Program stops immediately.
+            👉 "Program End" is NOT printed.
+            👉 This is called abnormal termination.
+
+
+            With Exception Handling (Program Continues)
+
+            public class WithHandling {
+                public static void main(String[] args) {
+                    int a = 10;
+                    int b = 0;
+
+                    try {
+                        int result = a / b;
+                        System.out.println("Result: " + result);
+                    } 
+                    catch (ArithmeticException e) {
+                        System.out.println("Cannot divide by zero");
+                    }
+
+                    System.out.println("Program End");
+                }
+            }
+
+
+        Output:
+        Cannot divide by zero   
+        Program End
+
+        👉 Program does NOT crash.
+        👉 It handles the error.
+        👉 It continues execution.
+
+
+        So How It Proves?
+Improves Reliability
+
+    Program handles errors safely instead of crashing.
+
+Prevents Abnormal Termination
+
+    Even after error → Program continues.
+
+Interview Answer (Perfect Explanation)
+
+    You can say:
+        “Without exception handling, the program terminates when an error occurs. With try-catch, we can handle runtime errors and allow the program to continue execution. This improves reliability and prevents abnormal termination.”
+
+
+Real Life Example (Bank Application)
+If user enters wrong PIN:
+    Without exception handling → App crashes
+    With exception handling → Show message “Invalid PIN, try again”
+
+That is reliability
+            
