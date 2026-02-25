@@ -1,6 +1,10 @@
 Exception :- 
             Exception is an unwanted or unexpected event that occurs during program execution 
             and stops the normal flow of the program.
+            Example:
+            Dividing a number by zero → ArithmeticException
+
+            It prevents abnormal termination.
 
             Exception handling improves program reliability and prevents abnormal termination.
             Let’s prove it with example
@@ -75,4 +79,194 @@ If user enters wrong PIN:
     With exception handling → Show message “Invalid PIN, try again”
 
 That is reliability.
+
+
+=============*******************==================***************===============************==============***************
+=============*******************==================***************===============************==============***************
             
+Types of Exceptions
+
+✅ 1. Checked Exception
+
+    Checked at compile time
+
+    Must handle using try-catch or throws
+
+    Example: IOException, SQLException
+
+Caused by external resources (file, database, network)
+
+
+✅ 2. Unchecked Exception
+
+Occurs at runtime
+
+Not compulsory to handle
+
+Caused by programmer mistakes
+
+Example:
+
+ArithmeticException
+
+NullPointerException
+
+IndexOutOfBoundsException
+
+
+🔴 3. Error
+
+Serious JVM problem
+
+Cannot normally handle
+
+Example: StackOverflowError, OutOfMemoryError
+
+
+
+
+IOException
+import java.io.FileReader;
+
+public class CheckedExample {
+    public static void main(String[] args) throws Exception {
+        FileReader file = new FileReader("abc.txt");
+    }
+}
+
+What happens?
+
+If file does not exist → Compile-time error unless handled.
+
+Interview Answer:
+“Checked exception is checked at compile time. We must handle it using try-catch or throws. Example: IOException.”
+
+
+
+
+ArithmeticException
+public class UncheckedExample {
+    public static void main(String[] args) {
+        int a = 10 / 0;
+        System.out.println(a);
+    }
+}
+
+What happens?
+
+Program compiles.
+At runtime → ArithmeticException.
+
+🎤 Interview Answer:
+
+“Unchecked exceptions occur at runtime. Compiler does not force to handle them. Example: ArithmeticException.”
+
+
+
+
+NullPointerException
+public class NullExample {
+    public static void main(String[] args) {
+        String name = null;
+        System.out.println(name.length());
+    }
+}
+
+Runtime → NullPointerException
+
+Interview Line:
+“This happens when we try to use null reference.
+
+
+
+
+StackOverflowError
+public class ErrorExample {
+    public static void main(String[] args) {
+        main(args);   // infinite recursion
+    }
+}
+
+What happens?
+
+Program runs → StackOverflowError
+
+Interview Line:
+“Errors are serious problems related to JVM. We should not handle them normally. Example: StackOverflowError.”
+
+
+
+
+Difference between Checked and Unchecked Exception?
+
+You say:
+👉 Checked exception is checked at compile time and must be handled.
+👉 Unchecked exception occurs at runtime and is not compulsory to handle.
+👉 Errors are JVM-level serious problems.
+
+
+
+
+
+interview questions and its answers :- 
+
+\\
+1) What is an Exception?
+An exception is an unwanted event that occurs during program execution and disrupts the normal flow of the program.
+It usually happens due to logical errors, invalid input, or external resource problems.
+
+2) What is Exception Handling?
+Exception handling is a mechanism in Java used to handle runtime errors so that the normal flow of the program can be maintained.
+It prevents the program from crashing suddenly.
+
+3) What is the superclass of all exceptions and errors in Java?
+Throwable is the superclass of all exceptions and errors in Java.
+Both Exception and Error classes are derived from Throwable.
+
+4) What are the types of exceptions in Java?
+There are two types of exceptions: Checked exceptions and Unchecked exceptions, while Errors represent serious system problems.
+Checked and Unchecked exceptions come under the Exception class.
+
+5) What is a Checked Exception?
+A checked exception is checked at compile time and must be handled using try-catch or declared using throws.
+These exceptions usually occur due to external factors like files or databases.
+
+6) What is an Unchecked Exception?
+An unchecked exception occurs at runtime and is not compulsory to handle.
+It mainly happens because of programming mistakes or incorrect logic.
+
+7) What is the difference between Checked and Unchecked Exception?
+Checked exceptions are checked at compile time and must be handled, whereas unchecked exceptions occur at runtime and handling them is not mandatory.
+The compiler forces handling of checked exceptions but not unchecked ones.
+
+8) What is an Error in Java?
+An error is a serious problem related to the JVM or system resources that cannot normally be handled by the application.
+Errors usually indicate system-level failures such as memory issues.
+
+9) What is a try block?
+The try block contains code that may cause an exception.
+If an exception occurs inside it, control moves to the catch block.
+
+10) What is a catch block?
+The catch block is used to handle the exception thrown inside the try block.
+It allows the program to continue execution instead of terminating.
+
+11) What is the finally block?
+The finally block always executes whether an exception occurs or not.
+It is mainly used to close resources like files or database connections.
+
+12) What happens if an exception is not handled?
+If an exception is not handled, the program terminates abnormally.
+The remaining code after the exception will not execute.
+
+13) What is the difference between throw and throws?
+The throw keyword is used to manually throw an exception, while throws is used in a method signature to declare that the method may throw an exception.
+Throw is used inside the method body, and throws is used with the method declaration.
+
+14) Why is exception handling important?
+Exception handling is important because it prevents abnormal termination, improves program reliability, and makes the application more stable and user-friendly.
+It also helps in debugging and maintaining large applications.
+
+15) Explain the exception hierarchy in short.
+In Java, Throwable is the root class, and it has two subclasses: Exception and Error.
+Exception is further divided into Checked and Unchecked exceptions.
