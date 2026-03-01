@@ -10,24 +10,50 @@ package stringQuestions;
 
 public class Program06 {
     public static void main(String[] args) {
-        String name = "International";
+        // String name = "International";
 
+        // int count = 0;
+        // String result = "";
+
+        // for(int i=0;i<name.length();i++){
+        //     char ch = name.charAt(i);
+        //     if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || 
+        //         ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+        //             count++;
+        //     }
+        // }
+        // System.out.println(count);
+
+        // for(int i=0;i<name.length();i++){
+        //     char ch = name.charAt(i);
+        //     if("aeiouAEIOU".indexOf(ch) != -1){
+        //         result = result + count;
+        //         count--;
+        //     }
+        //     else{
+        //         result = result + ch;
+        //     }
+        // }
+        // System.out.println(result);
+
+        String str = "International";
+
+        StringBuilder sb = new StringBuilder(str);
         int count = 0;
         String result = "";
 
-        for(int i=0;i<name.length();i++){
-            char ch = name.charAt(i);
-            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || 
-                ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
-                    count++;
+        for(int i=0;i<sb.length();i++){
+            char ch = sb.charAt(i);
+            if("aeiouAEIOU".indexOf(ch)!=-1){
+                count++;
             }
         }
         System.out.println(count);
 
-        for(int i=0;i<name.length();i++){
-            char ch = name.charAt(i);
-            if("aeiouAEIOU".indexOf(ch) != -1){
-                result = result + count;
+        for(int i=0;i<sb.length();i++){
+            char ch = sb.charAt(i);
+            if("aeiouAEIOU".indexOf(ch)!=-1){
+                result = result  + count;
                 count--;
             }
             else{
