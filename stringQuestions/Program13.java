@@ -33,13 +33,14 @@ public class Program13 {
         String[] words = str.split(" ");
 
         for(int i=0;i<words.length;i++){
-            String word = words[i];
-            String reverse = "";
-
-            for(int j=word.length()-1;j>=0;j--){
-                reverse =  reverse + word.charAt(j);
+            StringBuilder sb = new StringBuilder(words[i]);
+            String result = "";
+            for(int j=sb.length()-1;j>=0;j--){
+                result = result + sb.charAt(j);
             }
-            System.out.print(reverse+" ");
+            System.out.println(result);
         }
+
+
     }
 }
