@@ -27,6 +27,5 @@ public class Program12 {
         for(String word :  words){
             System.out.println( word + " : "+word.length());
         }
-
     }
 }
