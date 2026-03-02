@@ -33,7 +33,9 @@ public class Program15 {
             sb.append(" ");
         }
         System.err.println(sb);
-
-
     }
 }
+
+
+/* append() means add something at the end.
+Append = Add at last */
