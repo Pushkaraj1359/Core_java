@@ -10,28 +10,52 @@ package stringQuestions;
 
 public class Program19 {
     public static void main(String[] args) {
+        // String str = "hello i am java developer";
+        // String [] arr = str.split(" ");
+
+        // String result = "";
+
+        // for(int i=0;i<arr.length;i++){
+        //     String word = arr[i];
+        //     String newWord ="";
+        //     int count = 1;
+
+        //     for(int j=0;j<word.length();j++){
+        //         char ch = word.charAt(j);
+        //         if("aeiou".indexOf(ch) != -1){
+        //             newWord = newWord + count;
+        //             count++;
+        //         }
+        //         else{
+        //             newWord = newWord + ch;
+        //         }
+        //     }
+        //     result = result + newWord+ " ";
+        // }
+        // System.out.println(result.trim());
+
         String str = "hello i am java developer";
-        String [] arr = str.split(" ");
+        String[] arr = str.split(" ");
 
         String result = "";
 
         for(int i=0;i<arr.length;i++){
             String word = arr[i];
-            String newWord ="";
-            int count = 1;
+            String newWord = "";
+            int count =1;
 
             for(int j=0;j<word.length();j++){
                 char ch = word.charAt(j);
-                if("aeiou".indexOf(ch) != -1){
-                    newWord = newWord + count;
+                if("aeiouAEIOU".indexOf(ch) != -1){
+                    newWord = newWord +  count;
                     count++;
                 }
                 else{
                     newWord = newWord + ch;
                 }
             }
-            result = result + newWord+ " ";
+            result = result + newWord+" ";
         }
-        System.out.println(result.trim());
+        System.out.print(result);
     }
 }

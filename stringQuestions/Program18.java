@@ -10,27 +10,27 @@ package stringQuestions;
 public class Program18 {
     public static void main(String[] args) {
 
-        String str = "hello i am java developer";
-        String[] arr = str.split(" ");
+        // String str = "hello i am java developer";
+        // String[] arr = str.split(" ");
 
-        String firstChars = "";
-        String restPart = "";
+        // String firstChars = "";
+        // String restPart = "";
 
-        for(int i = 0; i < arr.length; i++) {
+        // for(int i = 0; i < arr.length; i++) {
 
-            String word = arr[i];
+        //     String word = arr[i];
 
-            if(word.length() > 1) {
+        //     if(word.length() > 1) {
 
-                firstChars = firstChars + word.charAt(0);   // collect first letters
-                restPart = restPart + word.substring(1) + " ";  // collect remaining part
-            }
-            else {
-                firstChars = firstChars + word;   // single letter word
-            }
-        }
+        //         firstChars = firstChars + word.charAt(0);   // collect first letters
+        //         restPart = restPart + word.substring(1) + " ";  // collect remaining part
+        //     }
+        //     else {
+        //         firstChars = firstChars + word;   // single letter word
+        //     }
+        // }
 
-        System.out.println(restPart.trim() + firstChars);
+        // System.out.println(restPart.trim() + firstChars);
     
     // Method 02
         /*  String str = "hello i am java developer";
@@ -51,5 +51,18 @@ public class Program18 {
             }
         }
         System.out.println(restPart.toString() + firstChar.toString());  */
+
+        String str = "hello i am java developer";
+        String[] arr = str.split(" ");
+        String firstEle ="";
+        String rest ="";
+
+        for(int i=0;i<arr.length;i++){
+            String word = arr[i];
+            firstEle = firstEle + word.charAt(0);
+            rest = rest + word.substring(1)+" ";
+        }
+        String result = rest.trim() + firstEle;
+        System.out.println(result);
     }
 }

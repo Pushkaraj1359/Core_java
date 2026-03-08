@@ -20,19 +20,27 @@ public class Program15 {
         // }
 
     //Method 02
-        String str = "hii i am java developer";
-        String[] words = str.split(" ");
+        // String str = "hii i am java developer";
+        // String[] words = str.split(" ");
 
-        // StringBuilder cant accept string array as argument.
-        // in case if we mension string array as argument then it will gives compile time error.
-        StringBuilder sb= new StringBuilder();
+        // // StringBuilder cant accept string array as argument.
+        // // in case if we mension string array as argument then it will gives compile time error.
+        // StringBuilder sb= new StringBuilder();
+
+        // for(int i=0;i<words.length;i++){
+        //     sb.append(words[i]);
+        //     sb.append(words[i].length());
+        //     sb.append(" ");
+        // }
+        // System.err.println(sb);
+
+
+        String name = "Kulkarni Pushkaraj Saurabh"; 
+        String[] words = name.split(" ");
 
         for(int i=0;i<words.length;i++){
-            sb.append(words[i]);
-            sb.append(words[i].length());
-            sb.append(" ");
+            System.out.print(words[i]+words[i].length()+" ");
         }
-        System.err.println(sb);
     }
 }
 

@@ -24,23 +24,26 @@ public class Program16 {
         // System.out.println(result+ " ");
 
     // Method 02
-        String str = "hello i am java developer";
-        String[] words = str.split(" ");
+        // String str = "hello i am java developer";
+        // String[] words = str.split(" ");
 
-        StringBuilder sb = new StringBuilder();
+        // StringBuilder sb = new StringBuilder();
 
-        for(int i = 0; i < words.length; i++) {
+        // for(int i = 0; i < words.length; i++) {
 
-            String word = words[i];
+        //     String word = words[i];
 
-            char first = word.charAt(0);        // first character
-            String rest = word.substring(1);    // remaining string
+        //     char first = word.charAt(0);        // first character
+        //     String rest = word.substring(1);    // remaining string
 
-            sb.append(rest);        // add remaining part
-            sb.append(first);       // add first char at end
-            sb.append(" ");         // add space
-        }
+        //     sb.append(rest);        // add remaining part
+        //     sb.append(first);       // add first char at end
+        //     sb.append(" ");         // add space
+        // }
 
-        System.out.println(sb.toString());
+        // System.out.println(sb.toString());
+
+
+        
     }
 }

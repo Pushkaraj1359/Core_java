@@ -33,23 +33,23 @@ public class Program20 {
 
 
     //Method 02
-        String str = "hello i am java developer";
-        StringBuilder result = new StringBuilder();
-        StringBuilder vowels = new StringBuilder();
+        // String str = "hello i am java developer";
+        // StringBuilder result = new StringBuilder();
+        // StringBuilder vowels = new StringBuilder();
 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(ch == ' '){
-                result.append(' ');
-            }
-            else if ("aeiou".indexOf(ch)!= -1) {
-                vowels.append(ch);
-            }
-            else{
-                result.append(ch);
-            }
-        }
-        System.out.println(result.toString().trim()+" "+vowels.toString());
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+        //     if(ch == ' '){
+        //         result.append(' ');
+        //     }
+        //     else if ("aeiou".indexOf(ch)!= -1) {
+        //         vowels.append(ch);
+        //     }
+        //     else{
+        //         result.append(ch);
+        //     }
+        // }
+        // System.out.println(result.toString().trim()+" "+vowels.toString());
     }
 }
 

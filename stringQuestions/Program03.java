@@ -9,7 +9,7 @@
 
 package stringQuestions;
 
-public class Program {
+public class Program03 {
     public static void main(String[] args) {
         // method 01
             // String name = "Pushkaraj";
@@ -49,6 +49,7 @@ public class Program {
 
             result = result + first;
             System.out.println(result);
+            
 
     }
 }

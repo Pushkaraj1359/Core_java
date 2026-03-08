@@ -1,9 +1,7 @@
 // Q1. Shift First Character to Last
 
 // Problem: Move the first character of the string to the end.
-
 // Input: India
-
 // Output: ndiaI
 
 
@@ -11,26 +9,25 @@ package stringQuestions;
 
 public class Program01 {
 
-    // static void shiftCharAtLast(String name){
+    static void shiftCharAtLast(String name){
         
-    //     if(name==null || name.trim().isEmpty() || name.matches("^[a-zA-Z ]+$")){
-    //         System.out.println("sting is invalid :");
-    //         return ;
-    //     }
+        if(name==null || name.trim().isEmpty() || !name.matches("^[a-zA-Z ]+$")){
+            System.out.println("sting is invalid :");
+            return ;
+        }
+        if(name.length() == 1){
+            System.out.println(name);
+            return;
+        }
 
-    //     if(name.length() == 1){
-    //         System.out.println(name);
-    //         return;
-    //     }
+        String resuit = "";
 
-    //     String resuit = "";
-
-    //     for(int i=1;i<name.length();i++){
-    //         resuit=resuit + name.charAt(i);
-    //     }
-    //     resuit=resuit + name.charAt(0);
-    //     System.out.println(resuit);
-    // }
+        for(int i=1;i<name.length();i++){
+            resuit=resuit + name.charAt(i);
+        }
+        resuit=resuit + name.charAt(0);
+        System.out.println(resuit);
+    }
 
     public static void main(String[] args){
 
@@ -55,7 +52,6 @@ public class Program01 {
         //         sb.deleteCharAt(0);
         //         sb.append(first);
         //         System.out.println(sb);
-
     }
 }
 

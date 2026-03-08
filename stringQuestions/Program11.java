@@ -25,6 +25,23 @@ public class Program11 {
         // for(String word : words){
         //     System.out.println(word+" ");
         // }
+
+        String name = "kulkarni  pushkaraj balika saurabh";
+        String[] words = name.split(" ");
+
+        for(int i=0;i<words.length;i++){
+            for(int j=i+1;j<words.length;j++){
+                if(words[i].compareTo(words[j])>0){
+                    String temp = words[i];
+                    words[i] = words[j];
+                    words[j]=temp;
+                }
+            }
+        }
+        for(String word : words){
+            System.out.print(word+" ");
+        }
+
     }
 }
 

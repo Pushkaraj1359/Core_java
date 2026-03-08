@@ -36,30 +36,30 @@ public class Program06 {
         // }
         // System.out.println(result);
 
-        String str = "International";
+        // String str = "International";
 
-        StringBuilder sb = new StringBuilder(str);
-        int count = 0;
-        String result = "";
+        // StringBuilder sb = new StringBuilder(str);
+        // int count = 0;
+        // String result = "";
 
-        for(int i=0;i<sb.length();i++){
-            char ch = sb.charAt(i);
-            if("aeiouAEIOU".indexOf(ch)!=-1){
-                count++;
-            }
-        }
-        System.out.println(count);
+        // for(int i=0;i<sb.length();i++){
+        //     char ch = sb.charAt(i);
+        //     if("aeiouAEIOU".indexOf(ch)!=-1){
+        //         count++;
+        //     }
+        // }
+        // System.out.println(count);
 
-        for(int i=0;i<sb.length();i++){
-            char ch = sb.charAt(i);
-            if("aeiouAEIOU".indexOf(ch)!=-1){
-                result = result  + count;
-                count--;
-            }
-            else{
-                result = result + ch;
-            }
-        }
-        System.out.println(result);
+        // for(int i=0;i<sb.length();i++){
+        //     char ch = sb.charAt(i);
+        //     if("aeiouAEIOU".indexOf(ch)!=-1){
+        //         result = result  + count;
+        //         count--;
+        //     }
+        //     else{
+        //         result = result + ch;
+        //     }
+        // }
+        // System.out.println(result);
     }
 }

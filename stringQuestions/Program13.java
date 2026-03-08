@@ -29,17 +29,20 @@ public class Program13 {
         // }
 
     //Method 02 
-        String str = "i am java developer";
-        String[] words = str.split(" ");
+        // String str = "i am java developer";
+        // String[] words = str.split(" ");
 
-        for(int i=0;i<words.length;i++){
-            StringBuilder sb = new StringBuilder(words[i]);
-            String result = "";
-            for(int j=sb.length()-1;j>=0;j--){
-                result = result + sb.charAt(j);
-            }
-            System.out.println(result);
-        }
+        // for(int i=0;i<words.length;i++){
+        //     StringBuilder sb = new StringBuilder(words[i]);
+        //     String result = "";
+        //     for(int j=sb.length()-1;j>=0;j--){
+        //         result = result + sb.charAt(j);
+        //     }
+        //     System.out.println(result);
+        // }
+
+
+        
 
 
     }

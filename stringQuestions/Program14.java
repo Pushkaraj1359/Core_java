@@ -20,18 +20,21 @@ public class Program14 {
         // }
 
     //Method 02 
-        String str = "hello i am java developer";
-        String[] words = str.split(" ");
+        // String str = "hello i am java developer";
+        // String[] words = str.split(" ");
 
-        StringBuilder sb = new StringBuilder();
+        // StringBuilder sb = new StringBuilder();
 
-        for(int i=0;i<words.length;i++){
-            sb.append(words[i]);
-            sb.append(i+1);
-            sb.append(" ");
-        }
-        sb.toString();
-        System.out.print(sb);
+        // for(int i=0;i<words.length;i++){
+        //     sb.append(words[i]);
+        //     sb.append(i+1);
+        //     sb.append(" ");
+        // }
+        // sb.toString();
+        // System.out.print(sb);
+
+
+        
     }
 }
 
