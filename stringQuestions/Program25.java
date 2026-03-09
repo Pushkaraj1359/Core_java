@@ -27,5 +27,7 @@ public class Program25 {
             }
 
             System.out.println(result);
+
+            
     }
 }
