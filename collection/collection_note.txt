@@ -1,0 +1,33 @@
+Collection : - 
+
+    1) Collection is an group of object.
+
+example  : indiCoin ==> store carence like 50 paisa 1 rupees , 2 rupees , 5 rupees , 10 rupees and so on 
+
+example :  PenBox -----> no of pens.    penBox is a Collection.
+
+
+Collection method : -
+                    1) boolean add(E e);
+                    2) boolean contains(E e);
+                    3) boolean remove(E e);
+                    4) int size();
+                    5) boolean isEmpty();
+                    6) boolean addAll();
+                    7) boolean containAll(Collection);
+                    8) boolean removeALL(Collection);
+                    9)clear();
+
+We can convert Collection to array  : -     toArray();
+
+
+Collection : 1) list ------> link to each another...
+             2) store      
+             3) queue
+  * these are INTERFACE...                                      
+
+
+
+
+
+        
