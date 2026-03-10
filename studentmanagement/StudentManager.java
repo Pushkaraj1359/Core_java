@@ -25,7 +25,14 @@ class StudentManager {
     }
 
     
-    void deleteStudent(){
-        
+    void deleteStudent(int studentId){
+        for(int i=0;i<count;i++){
+            if(students[i].studentId == studentId){
+                for(int j=i;j<count-1;j++){
+                    students[j]= students[j+1];
+                }
+                count--;
+            }
+        }
     }
 }

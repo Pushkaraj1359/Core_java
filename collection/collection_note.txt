@@ -16,16 +16,23 @@ Collection method : -
                     6) boolean addAll();
                     7) boolean containAll(Collection);
                     8) boolean removeALL(Collection);
-                    9)clear();
+                    9) clear();
+                    10)toArray();
+                    11)
 
 We can convert Collection to array  : -     toArray();
 
-
+Map is not part of collection...
 Collection : 1) list ------> link to each another...
              2) store      
              3) queue
-  * these are INTERFACE...                                      
+             
+  * these are INTERFACE...                                                     
 
+
+addAll()
+family.containAll(family1);
+family.removeAll(family);
 
 
 
