@@ -7,7 +7,7 @@ example  : indiCoin ==> store carence like 50 paisa 1 rupees , 2 rupees , 5 rupe
 example :  PenBox -----> no of pens.    penBox is a Collection.
 
 
-Collection method : -
+Collection method :-
                     1) boolean add(E e);
                     2) boolean contains(E e);
                     3) boolean remove(E e);
@@ -18,7 +18,6 @@ Collection method : -
                     8) boolean removeALL(Collection);
                     9) clear();
                     10)toArray();
-                    11)
 
 We can convert Collection to array  : -     toArray();
 
@@ -30,11 +29,61 @@ Collection : 1) list ------> link to each another...
   * these are INTERFACE...                                                     
 
 
+
+
+
+// Home-Work
+
 addAll()
 family.containAll(family1);
 family.removeAll(family);
 
 
+// ArrayList --> Array Object[]    // Lokesh Mahatur
+
+
+
+
+interface Collection{
+    Iterator iterator();
+}
+
+public java.util.Iterator{
+    boolean hasNext();
+    E next();
+    void remove();
+}
+
+
+
+
+
+Q) what is difference between below array??
+array 
+numbers 11,22,33,44,55,66
+
+numbers.remove(0);
+numbers.remove(new Integer);
+
 
 
         
+
+
+arrayList delete and add is not best choose for arrayList 
+because its require many shift operation.
+
+
+search over chatgpt 
+null variable declare then garbej collector called automatically and distroy memory
+
+
+student.java      App.java
+                    arrayList<Student>
+                    
+                    print
+
+                    Student add 
+                    student search  
+                    student remove   
+                    student displayAllStudent
