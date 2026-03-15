@@ -1,0 +1,275 @@
+1️⃣ Sum of Elements
+int sum = 0;
+
+for(int i = 0; i < numbers.size(); i++){
+    sum += numbers.get(i);
+}
+
+System.out.println(sum);
+
+
+
+
+2️⃣ Average of Elements
+int sum = 0;
+
+for(int i = 0; i < numbers.size(); i++){
+    sum += numbers.get(i);
+}
+
+double avg = (double)sum / numbers.size();
+
+System.out.println(avg);
+
+
+
+
+3️⃣ Print Even Numbers
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) % 2 == 0){
+        System.out.println(numbers.get(i));
+    }
+}
+
+
+4️⃣ Print Odd Numbers
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) % 2 != 0){
+        System.out.println(numbers.get(i));
+    }
+}
+
+
+
+
+
+
+5️⃣ Count Positive Numbers
+int count = 0;
+
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) > 0){
+        count++;
+    }
+}
+
+System.out.println(count);
+
+
+
+
+6️⃣ Find Maximum Element
+int max = numbers.get(0);
+
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) > max){
+        max = numbers.get(i);
+    }
+}
+
+System.out.println(max);
+
+
+
+
+7️⃣ Find Minimum Element
+int min = numbers.get(0);
+
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) < min){
+        min = numbers.get(i);
+    }
+}
+
+System.out.println(min);
+
+
+
+
+8️⃣ Second Largest Number
+int largest = numbers.get(0);
+int second = numbers.get(0);
+
+for(int i = 0; i < numbers.size(); i++){
+
+    if(numbers.get(i) > largest){
+        second = largest;
+        largest = numbers.get(i);
+    }
+    else if(numbers.get(i) > second && numbers.get(i) != largest){
+        second = numbers.get(i);
+    }
+}
+
+System.out.println(second);
+
+
+
+
+9️⃣ Search an Element
+int target = 20;
+boolean found = false;
+
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) == target){
+        found = true;
+        break;
+    }
+}
+
+System.out.println(found);
+
+
+
+
+🔟 Remove Duplicate Elements
+ArrayList<Integer> unique = new ArrayList<>();
+
+for(int i = 0; i < numbers.size(); i++){
+    int num = numbers.get(i);
+
+    if(!unique.contains(num)){
+        unique.add(num);
+    }
+}
+
+System.out.println(unique);
+
+
+
+
+1️⃣1️⃣ Reverse ArrayList
+for(int i = numbers.size() - 1; i >= 0; i--){
+    System.out.print(numbers.get(i) + " ");
+}
+
+
+
+
+1️⃣2️⃣ Count Frequency
+int target = 10;
+int count = 0;
+
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) == target){
+        count++;
+    }
+}
+
+System.out.println(count);
+
+
+
+
+1️⃣3️⃣ Merge Two ArrayLists
+list1.addAll(list2);
+
+System.out.println(list1);
+
+
+
+
+1️⃣4️⃣ Remove Elements Greater Than 50
+for(int i = 0; i < numbers.size(); i++){
+    if(numbers.get(i) > 50){
+        numbers.remove(i);
+        i--;
+    }
+}
+
+
+
+
+1️⃣5️⃣ Find Duplicate Elements
+ArrayList<Integer> duplicates = new ArrayList<>();
+
+for(int i = 0; i < numbers.size(); i++){
+
+    for(int j = i + 1; j < numbers.size(); j++){
+
+        if(numbers.get(i).equals(numbers.get(j)) 
+           && !duplicates.contains(numbers.get(i))){
+            duplicates.add(numbers.get(i));
+        }
+
+    }
+}
+
+System.out.println(duplicates);
+
+
+
+
+1️⃣6️⃣ Rotate ArrayList Right by 1
+int last = numbers.get(numbers.size() - 1);
+
+numbers.remove(numbers.size() - 1);
+
+numbers.add(0, last);
+
+System.out.println(numbers);
+
+
+
+
+1️⃣7️⃣ Find Missing Number
+int n = numbers.size() + 1;
+
+int expectedSum = n * (n + 1) / 2;
+
+int actualSum = 0;
+
+for(int i = 0; i < numbers.size(); i++){
+    actualSum += numbers.get(i);
+}
+System.out.println(expectedSum - actualSum);
+
+
+
+
+1️⃣8️⃣ Separate Even and Odd
+ArrayList<Integer> even = new ArrayList<>();
+ArrayList<Integer> odd = new ArrayList<>();
+
+for(int i = 0; i < numbers.size(); i++){
+
+    if(numbers.get(i) % 2 == 0){
+        even.add(numbers.get(i));
+    }
+    else{
+        odd.add(numbers.get(i));
+    }
+
+}
+
+System.out.println(even);
+System.out.println(odd);
+
+
+
+
+1️⃣9️⃣ Remove Negative Numbers
+for(int i = 0; i < numbers.size(); i++){
+
+    if(numbers.get(i) < 0){
+        numbers.remove(i);
+        i--;
+    }
+
+}
+
+
+
+
+2️⃣0️⃣ Find Common Elements
+ArrayList<Integer> common = new ArrayList<>();
+
+for(int i = 0; i < list1.size(); i++){
+
+    if(list2.contains(list1.get(i))){
+        common.add(list1.get(i));
+    }
+
+}
+
+System.out.println(common);
