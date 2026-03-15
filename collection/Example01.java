@@ -1,7 +1,7 @@
 import java.util.Collection;
 import java.util.List;
 import java.util.ArrayList;
-public  class Example03{
+public  class Example01{
 	public static void main(String[] args) {
 		
 		// Generic Collection
@@ -38,7 +38,7 @@ public  class Example03{
 }
 
 
-// remove(3)			0		--------> remove element at index 3
+// remove(3)					--------> remove element at index 3
 // remove(Integer.valueOf(3))	--------> remove value 3
 
 
