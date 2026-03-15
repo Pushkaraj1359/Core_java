@@ -17,5 +17,5 @@ public class Main {
         manager.displayAllStudents();
 
         manager.searchStudent(1);
-    }
+    }   
 }

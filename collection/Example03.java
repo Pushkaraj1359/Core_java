@@ -15,8 +15,11 @@ public  class Example03{
 		numbers.add(33);
 		numbers.add(22);
 
-		// duplicates Object are allow
-		// insertion order maintain
+		// array list is not an best choose for add and remove operation 
+		// because its required many shift operations.
+		
+		// duplicates Object are allow.
+		// insertion order maintain.
 
 		// numbers.contains(new Integer(44))
 		System.out.println("contains  "+numbers.contains(44));
