@@ -21,7 +21,7 @@ public  class Example01{
 		// duplicates Object are allow.
 		// insertion order maintain.
 
-		// numbers.contains(new Integer(44))
+		// numbers.contains(new Integer(44))  
 		System.out.println("contains  "+numbers.contains(44));
 
 		// public boolean contains(E e){  E e//Integer i
@@ -56,6 +56,6 @@ public  class Example01{
 // Integer.valueOf(44) returns an Integer object
 // Passed to remove(Object o)
 // ArrayList removes value 44
-// ✅ This is the recommended modern way.
+// This is the recommended modern way.
 
 

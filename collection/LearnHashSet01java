@@ -83,3 +83,14 @@ public class LearnHashSet01 {
         System.out.println("After clear : " + set);
     }
 }
+
+
+
+
+// Key Points (Interview Style)
+//     HashSet does NOT allow duplicates
+//     Does NOT maintain insertion order
+//     Allows one null
+//     Uses hashing internally
+//     Fast operations (O(1))
+//     No indexing
