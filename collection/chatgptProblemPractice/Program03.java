@@ -18,7 +18,7 @@ public class Program03 {
 
         for(int i=0;i<numbers.size();i++){
             int num = numbers.get(i);
-
+            
             if(!uniqueNum.contains(num)){
                 uniqueNum.add(num);
             }

@@ -1,0 +1,85 @@
+package collection;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class LearnHashSet01 {
+
+    public static void main(String[] args) {
+
+        HashSet set = new HashSet();
+
+        // add()
+        set.add(11);
+        set.add("11");
+        set.add(11.11);
+        set.add('1');
+        set.add(null);
+        set.add(11); // duplicate (ignored)
+
+        System.out.println("Set : " + set);
+
+        // size()
+        System.out.println("Size : " + set.size());
+
+        // contains()
+        System.out.println("Contains 11 ? : " + set.contains(11));
+
+        // remove()
+        set.remove(11.11);
+        System.out.println("After remove : " + set);
+
+        // isEmpty()
+        System.out.println("Is set empty ? : " + set.isEmpty());
+
+        System.out.println("------------ Iterator ------------");
+
+        Iterator it = set.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        System.out.println("------------ For Each ------------");
+
+        for (Object ob : set) {
+            System.out.println(ob);
+        }
+
+        System.out.println("------------ Collection Methods ------------");
+
+        // Second set
+        HashSet set2 = new HashSet();
+        set2.add("Java");
+        set2.add("Python");
+        set2.add("C++");
+
+        System.out.println("Set2 : " + set2);
+
+        // addAll()
+        set.addAll(set2);
+        System.out.println("After addAll : " + set);
+
+        // containsAll()
+        System.out.println("ContainsAll set2 ? : " + set.containsAll(set2));
+
+        // removeAll()
+        set.removeAll(set2);
+        System.out.println("After removeAll : " + set);
+
+        // retainAll()
+        set2.retainAll(set);
+        System.out.println("After retainAll : " + set2);
+
+        // toArray()
+        Object arr[] = set.toArray();
+
+        System.out.println("Array elements : ");
+        for (Object obj : arr) {
+            System.out.println(obj);
+        }
+
+        // clear()
+        set.clear();
+        System.out.println("After clear : " + set);
+    }
+}

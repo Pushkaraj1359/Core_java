@@ -173,7 +173,7 @@ System.out.println(list1);
 for(int i = 0; i < numbers.size(); i++){
     if(numbers.get(i) > 50){
         numbers.remove(i);
-        i--;
+        i--; // WE should must decrease the size after removing element.
     }
 }
 
@@ -191,7 +191,6 @@ for(int i = 0; i < numbers.size(); i++){
            && !duplicates.contains(numbers.get(i))){
             duplicates.add(numbers.get(i));
         }
-
     }
 }
 

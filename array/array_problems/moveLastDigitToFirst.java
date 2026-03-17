@@ -1,5 +1,5 @@
 // WAP to shift last digit to first from each elements
- 
+
 // Example Input:
 // input: {123,235,6754,3257,64,2367,288,35,645,374}
 // output:{312,523,4675,7325,46,7236,828,53,564,437}

@@ -18,7 +18,8 @@ public class Program06 {
 
         System.out.println("before delete element :"+numbers);
         
-        numbers.remove(3);   // delete(index);
+        numbers.remove(3);   // delete(index);   remove the element one the basics of index
+        numbers.remove(Integer.valueOf(07));   // remove the element 07 as value
         
         System.out.println("after delete element :"+numbers);
 
