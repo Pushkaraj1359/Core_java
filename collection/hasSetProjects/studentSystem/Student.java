@@ -9,7 +9,8 @@ class Student {
         this.name = name;
     }
 
-    public String toString() {
-        return id + " " + name;
+    void displayStudent() {
+        System.out.println("Student id: " + id);
+        System.out.println("Student name: " + name);
     }
 }
