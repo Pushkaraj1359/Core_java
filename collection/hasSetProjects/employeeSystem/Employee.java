@@ -11,8 +11,8 @@ public class Employee {
         this.Empsalary=Empsalary;
     }
     void displayEmployee(){
-        System.out.println("Employee id"+Empid);
-        System.out.println("Employee name"+Empname);
-        System.out.println("Employee id"+Empid);
+        System.out.println("Employee id : "+Empid);
+        System.out.println("Employee name :"+Empname);
+        System.out.println("Employee salary :"+Empsalary);
     }
 }

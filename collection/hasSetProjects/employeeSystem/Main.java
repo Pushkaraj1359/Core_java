@@ -14,8 +14,8 @@ public class Main {
         manager.addEmployee(e2);
         manager.addEmployee(e3);
         manager.addEmployee(e4);
-        manager.addEmployee(e5);
+       // manager.addEmployee(e5);
 
-        System.out.print(employee)l;
+        manager.displayAllEmployee();
     }
 }
