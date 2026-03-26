@@ -28,10 +28,5 @@ public class array01 {
         // System.out.println(x) = body
         // Can add more logic inside the lambda
         // Arrays.stream(arr).forEach(x-> System.out.println(x));    
-
-
-        
-
-
     }
 }

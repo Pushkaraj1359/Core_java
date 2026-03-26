@@ -25,10 +25,12 @@ public class InteterUsingHashCode {
         Data d3 = new Data(3);
         Data d4 = new Data(2);
 
-    num.add(d1);
+        num.add(d1);
         num.add(d2);
         num.add(d3);
         num.add(d4);
+
+        System.out.println(num);
 
     }
 }
