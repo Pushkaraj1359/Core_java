@@ -5,6 +5,8 @@
 // 5 5 5 5 5
 
 
+
+
 package number_patterns;
 
 public class pattern2 {
