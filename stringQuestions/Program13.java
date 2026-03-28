@@ -41,9 +41,5 @@ public class Program13 {
         //     System.out.println(result);
         // }
 
-
-        
-
-
     }
 }

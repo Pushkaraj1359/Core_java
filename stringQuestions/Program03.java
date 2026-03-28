@@ -34,22 +34,21 @@ public class Program03 {
 
         // Method 03
 
-            String name = "Pushkaraj";
+            // String name = "Pushkaraj";
 
-            char first = name.charAt(0);
-            char last = name.charAt(name.length()-1);
+            // char first = name.charAt(0);
+            // char last = name.charAt(name.length()-1);
 
-            String result = "";
+            // String result = "";
 
-            result = result + last;
+            // result = result + last;
 
-            for(int i=1;i<name.length()-1;i++){
-                result = result + name.charAt(i);
-            }
+            // for(int i=1;i<name.length()-1;i++){
+            //     result = result + name.charAt(i);
+            // }
 
-            result = result + first;
-            System.out.println(result);
-            
+            // result = result + first;
+            // System.out.println(result);
 
     }
 }

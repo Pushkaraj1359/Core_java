@@ -29,25 +29,28 @@ public class Program05 {
         // System.out.println(result);
 
     // Method 02
-        String str = "International";
+        // String str = "International";
 
-        StringBuilder sb = new StringBuilder(str);
-        int count = 0;
-        String result = "";
+        // StringBuilder sb = new StringBuilder(str);
+        // int count = 0;
+        // String result = "";
 
-        for(int i=0;i<sb.length();i++){
-            char ch = sb.charAt(i);
-            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || 
-                ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+        // for(int i=0;i<sb.length();i++){
+        //     char ch = sb.charAt(i);
+        //     if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || 
+        //         ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
 
-                count++;
-                result = result + count;
-            }
-            else{
-                result = result + ch;
-            }
-        }
-        System.out.println(result);
+        //         count++;
+        //         result = result + count;
+        //     }
+        //     else{
+        //         result = result + ch;
+        //     }
+        // }
+        // System.out.println(result);
+
+
+    
 
     }
 }
