@@ -37,6 +37,8 @@ public class Program01 {
         // String resuit = sr.substring(1)+sr.charAt(0);
         // System.out.println(resuit);
 
+    
+
 
 
                 // Function calling 
@@ -53,6 +55,10 @@ public class Program01 {
         //         sb.deleteCharAt(0);
         //         sb.append(first);
         //         System.out.println(sb);
+
+        
+        
+        
     }
 }
 

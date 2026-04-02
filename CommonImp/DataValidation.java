@@ -28,6 +28,7 @@ public class DataValidation {
         if(age >= 18 && age <= 60) {}
         if(marks >= 0 && marks <= 100) {}
         if(salary >= 0) {}
+
     
         // ===== STRING VALIDATIONS =====
         if(name != null) {}
