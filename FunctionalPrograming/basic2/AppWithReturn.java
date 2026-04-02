@@ -17,8 +17,6 @@ interface TwoParam{
 
 
 
-
-
 public class AppWithReturn {
     public static void main(String[] args) {
 
