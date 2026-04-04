@@ -9,7 +9,7 @@ package stringQuestions;
 public class Program04 {
     public static void main(String[] args) {
 
-    // Method 01
+    // Method 01.
         // String str="Education";
         // int count = 0;
 
