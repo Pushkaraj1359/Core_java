@@ -1,45 +1,45 @@
+
+import java.awt.SystemColor;
+
+
 class Pra{
+    
+        static void  operaation(String str){
+            char[] arr = str.toCharArray();
+            if(str == null || str.trim().isEmpty()){
+                System.out.println("String is invalid");
+                return;
+            }
+            
+            for(int i=0;i<str.length();i++){
+                for(int j=i+1;j<str.length();j++){
+                    if(arr[i]>arr[j]){
+                        char temp = arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                    }
+                }
+            }
 
-    static void calling(String str){
-        if(str==null || str.trim().isEmpty() || str.matches("^[a-zA-Z ]+$")){
-            System.out.println("String is invalid :");
-            return;
-        }
-        if(str.length()==1){
+            str=new String(arr);
             System.out.println(str);
-            return;
         }
-        String result = "";
-
-        char first = str.charAt(0);
-
-
-        for(int i=1;i<str.length();i++){
-            result += str.charAt(i);
-        }
-        System.out.println("output :"+result+first);
-    }
-    public static void main(String[] args) {
-
-        // Method 01
-        // String str = "Pushkaraj";
-        // calling(str);
+    
+    public static void main(String[] args){
+        // operaation("ABACDED");
 
 
-        // Method 02
-        // String str = "Pushkaraj";
-        // StringBuilder sb = new StringBuilder(str);
-        // char first  = sb.charAt(0);
-        // sb.deleteCharAt(0);
-        // sb.append(first);
-        // System.out.println(sb);
+        // String names = "hello everyone today i would like to talk about";
+
+        // names = names.trim();
+
+        // String[] name =  names.split("\\s+");
+
+        // System.out.println("no of words : "+name.length);
 
 
-        // Method 03
-        String str = "Pushkaraj";
-        String result = str.substring(1) + str.charAt(0);
-        System.out.println(result);
-
-
+        System.out.println (10+"hello"+20);// 10hello20
+        System.out.println ("hello"+20+10);//hello2010
+        System.out.println (10+20+"hello");//30hello
     }
 }

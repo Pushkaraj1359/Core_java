@@ -25,7 +25,7 @@ public class Program07 {
         // Convert vowels to char array
         char[] arr = vowels.toCharArray();
         
-        // Sort vowels
+        // Sort vowels 
         Arrays.sort(arr);
         
         // Convert back to string
