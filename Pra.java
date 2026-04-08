@@ -1513,7 +1513,35 @@ class Pra{
 
 
 
-// first question solve
+
+// Question 1) solve
+// remove dupliates
+
+class Pra{
+    static void removeDuplicate(String str){
+        int[] freq = new int[256];
+
+        for(int i=0;i<str.length();i++){
+            char ch1 = str.charAt(i);
+            freq[ch1]++;
+        }
+
+        for(int j=0;j<str.length();j++){
+            char ch2 = str.charAt(j);
+            if(freq[ch2] != 0){
+                System.out.print(ch2);
+                freq[ch2] = 0;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        removeDuplicate(aabbc);
+    }
+}
+
+
+// question 2) solve
+// check the stirng is ANAGRAM OR NOT
 
 class Pra{
     static void operation(String str){
