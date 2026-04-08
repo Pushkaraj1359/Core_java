@@ -53,8 +53,9 @@ public class Student {
 
 		Student s2 = (Student) obj;
 
-		if (this.id == s2.id && this.name.equals(s2.name) && this.marks == s2.marks)
+		if (this.id == s2.id && this.name.equals(s2.name) && this.marks == s2.marks){
 			return true;
+		}
 
 		return false;
 
