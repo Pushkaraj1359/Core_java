@@ -42,12 +42,12 @@ public class Student {
 	}
 
 
-	@Override
+	@Override																
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
 	}
 
-	
+
 	@Override
 	public boolean equals(Object obj) {
 
