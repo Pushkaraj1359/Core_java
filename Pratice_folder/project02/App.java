@@ -1,4 +1,5 @@
 package Pratice_folder.project02;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,17 +11,18 @@ public class App {
 
         int size = scanner.nextInt();
 
-        ArrayList<Student> student=new ArrayList<>();
+        ArrayList<Student> jpa86=new ArrayList<>();
 
         for(int i=0;i<size;i++){
             int id = scanner.nextInt();
             String name = scanner.next();
             double marks = scanner.nextDouble();
-
             Student student = new Student(id,name,marks);
-
-            student.add(student);
+            jpa86.add(student);
         }
+
+
+
 
 
 
