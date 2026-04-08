@@ -7,7 +7,7 @@ public class Student {
 	private double marks;
 
 	public Student() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Student(int id, String name, double marks) {
