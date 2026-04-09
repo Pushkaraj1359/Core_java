@@ -1517,23 +1517,39 @@ class Pra{
 
 class Pra{
     static void operation(String str){
-        int[] freq = new int[256];
-
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            freq[ch]++;
-        }
-
-        for(int i=0;i<str.length();i++){
-            char ch1 = str.charAt(i);
-            if(freq[ch1] != 0){
-                System.out.println(ch1);
-                freq[ch1] = 0;
-            }
-        }
+        
     }
     public static void main(String[] args) {
         operation("programming");
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Pra{
+//     static void operation(String str){
+        
+//     }
+//     public static void main(String[] args) {
+//         operation("");
+//     }
+// }
