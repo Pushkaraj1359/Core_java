@@ -1517,7 +1517,20 @@ class Pra{
 
 class Pra{
     static void operation(String str){
-        
+        int[] freq = new int[256];
+
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            freq[ch]++;
+        }
+
+        for(int j=0;j<str.length();j++){
+            char ch1 =  str.charAt(j);
+            if(freq[ch1] != 0){
+                System.out.print(ch1);
+                freq[ch1] = 0;
+            }
+        }
     }
     public static void main(String[] args) {
         operation("programming");
@@ -1545,11 +1558,26 @@ class Pra{
 
 
 
-// class Pra{
-//     static void operation(String str){
-        
-//     }
-//     public static void main(String[] args) {
-//         operation("");
-//     }
-// }
+
+
+
+
+
+class Pra{
+    static void operation(String str1, String str2){
+        char[] ch1 = str1.toCharArray();
+        char[] ch2 = str2.toCharArray();
+
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+
+        if(Arrays.equals(ch1,ch2)){
+            System.out.println("Anagram");
+        }else{
+            System.out.println("not Anagram");
+        }
+    }
+    public static void main(String[] args) {
+        operation("abc","cba");
+    }
+}
