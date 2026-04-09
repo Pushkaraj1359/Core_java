@@ -1,5 +1,5 @@
 class Data{
-    // insentail varibles..
+    // insentail varibles..>>>>
     int num;
     float fl;
     char letter;
@@ -18,3 +18,6 @@ public class App {
         d1.displayData();
     }
 }
+
+
+
