@@ -1565,17 +1565,20 @@ class Pra{
 
 class Pra{
     static void operation(String str1, String str2){
-        char[] ch1 = str1.toCharArray();
-        char[] ch2 = str2.toCharArray();
+        char[] chars = str1.toCharArray();
+        char[] chars1 = str2.toCharArray();
 
-        Arrays.sort(ch1);
-        Arrays.sort(ch2);
+        Arrays.sort(chars);
+        Arrays.sort(chars1);
 
-        if(Arrays.equals(ch1,ch2)){
-            System.out.println("Anagram");
-        }else{
-            System.out.println("not Anagram");
+        if(Arrays.equals(chars,chars1)){
+            System.out.print("anagram");
         }
+        else{
+            System.out.print("not anagram");
+        }
+
+
     }
     public static void main(String[] args) {
         operation("abc","cba");
