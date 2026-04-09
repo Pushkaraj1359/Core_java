@@ -14,13 +14,7 @@ class Student2 extends Thread{
         for(int i=1;i<=5;i++){
             System.out.println(Thread.currentThread().getName()+" "+(i*10));
         }
-    }
-
-
-
-    Static void findTable(int num){
-
-    }
+    };
 }
 
 
