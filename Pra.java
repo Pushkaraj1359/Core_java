@@ -321,85 +321,96 @@
 
 
 
-class Pra{
-    static  void longestWord(String str){
-        String[] words = str.split(" ");
-        String longest = "";
-        for(String word : words){
-            if(word.length() > longest.length()){
-                longest = word;
-            }
-        }
-        System.out.println(longest);
-    }
-    public static void main(String[] args) {
-        longestWord("welcome to international airport");
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // class Pra{
+//     static  void longestWord(String str){
+//         String[] words = str.split(" ");
+//         String longest = "";
+//         for(String word : words){
+//             if(word.length() > longest.length()){
+//                 longest = word;
+//             }
+//         }
+//         System.out.println(longest);
+//     }
 //     public static void main(String[] args) {
-        
+//         longestWord("welcome to international airport");
 //     }
 // }
+
+
+
+
+// Problem: Sort all words in dictionary (alphabetical) order.
+// Input: hello i am java developer
+// Output: am developer hello i java 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Pra{
+    public static void main(String[] args) {
+        
+    }
+}
