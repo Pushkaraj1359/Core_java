@@ -27,4 +27,4 @@ public class Pra{
     }
 }
 
-//  binary search algorithm
+//  binary search algorithm   and added with recursion calling function
