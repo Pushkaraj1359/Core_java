@@ -26,3 +26,5 @@ public class Pra{
         System.out.println(binarySearch(arr,ele));
     }
 }
+
+//  binary search algorithm
