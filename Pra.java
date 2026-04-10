@@ -1,7 +1,4 @@
 
-import java.util.Arrays;
-
-// import inheritance.main;
 
 // public class Pra{
 
@@ -263,28 +260,82 @@ import java.util.Arrays;
 // Output: aaeiilnnnortt
 
 
+// class Pra{
+//     static void sortAlpha(String str){
+//         char[] arr = str.toCharArray();
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[i]>arr[j]){
+//                     char temp = arr[i];
+//                     arr[i]=arr[j];
+//                     arr[j]=temp;
+//                 }
+//                 str=new String(arr);
+//                 System.out.println(str);
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         sortAlpha("international");
+//     }
+// }
+
+
+
+
+// Problem: Count the number of words in a sentence.
+// Input: hello i am java developer
+// Output: 5
+
+
+// class Pra{
+//     static void countWords(String str){
+//         int count = 0;
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(ch == ' '){
+//                 count++;
+//             }
+//         }
+//         System.out.println("number of words = "+count+1);
+//     }
+//     public static void main(String[] args) {
+//         countWords("hello i am java developer");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// Problem: Print the longest word in a sentence.
+// Input: welcome to international airport
+// Output: international
+
+
+
 class Pra{
-    static void sortAlpha(String str){
-        char[] arr = str.toCharArray();
-        for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[i]>arr[j]){
-                    char temp = arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-                str=new String(arr);
-                System.out.println(str);
+    static  void longestWord(String str){
+        String[] words = str.split(" ");
+        String longest = "";
+        for(String word : words){
+            if(word.length() > longest.length()){
+                longest = word;
             }
         }
+        System.out.println(longest);
     }
     public static void main(String[] args) {
-        sortAlpha("international");
+        longestWord("welcome to international airport");
     }
 }
-
-
-
 
 
 
