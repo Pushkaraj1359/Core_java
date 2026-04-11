@@ -475,6 +475,62 @@ Output: olleh i ma avaj repoleved */
 
 
 
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             String rest = "";
+//             char ch = word.charAt(0);
+//             for(int j=1;j<word.length();j++){
+//                 rest = rest + word.charAt(j);
+//             }
+//             String result = rest + ch;
+//             System.out.print(result+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+
+// Problem: Swap the first and last character of each word.
+// Input: hello i am java developer
+// Output: oellh i ma avaj revelopd
+// (Note: Your example was a little off. The output should reflect actual swap.)
+
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+
+//             // below if block for in case word is single character then this block work well
+//             if(word.length() <= 1){
+//                 System.out.print(word + " ");
+//                 continue;
+//             }
+
+//             char first = word.charAt(0);
+//             char last = word.charAt(word.length()-1);
+//             String mid ="";
+//             for(int j=1;j<word.length()-1;j++){
+//                 mid = mid + word.charAt(j);
+//             }
+//             String result = last + mid + first;
+//             System.out.print(result+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("hello i am java developer");
+//     }
+// }
 
 
 
