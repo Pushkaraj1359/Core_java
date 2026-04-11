@@ -404,22 +404,44 @@ Input: hello i am java developer
 
 Output: olleh i ma avaj repoleved */
 
+// class Pra{
+//     static void operation(String str){
+//         String[] arr = str.split(" ");
+//         for(int i=0;i<arr.length;i++){
+//             String word = arr[i];
+//             String reverse = "";
+//             for(int j=word.length()-1;j>=0;j--){
+//                 reverse =  reverse + word.charAt(j);
+//             }
+//             System.out.print(reverse+" ");
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+// Problem: Append word number (starting from 1) to each word.
+// Input: hello i am java developer
+// Output: hello1 i2 am3 java4 developer5
+
 class Pra{
     static void operation(String str){
         String[] arr = str.split(" ");
         for(int i=0;i<arr.length;i++){
-            String word = arr[i];
-            String reverse = "";
-            for(int j=word.length()-1;j>=0;j--){
-                reverse =  reverse + word.charAt(j);
-            }
-            System.out.print(reverse+" ");
+            System.out.print(arr[i]+(i+1)+" ");
         }
     }
-    public static void main(String[] args){
+    public static void main(String[] args) {
         operation("hello i am java developer");
     }
 }
+
+
+
+
 
 
 
