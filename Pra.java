@@ -1,10 +1,4 @@
 
-import inheritance.main;
-import javax.lang.model.util.ElementScanner14;
-
-
-
-// public class Pra{
 
 //     static int binarySearch(int arr[],int ele){
 //         int low=0;
@@ -767,6 +761,36 @@ Output: olleh i ma avaj repoleved */
 //         operation("0101010101");
 //     }
 // }
+
+
+
+
+
+
+
+
+// class Pra{
+//     static void operation(String str){
+//         String original = str ;
+//         String reverse = "";
+
+//         for(int i=str.length()-1;i>=0;i--){
+//             char  ch = str.charAt(i);
+//             reverse = reverse + ch;
+//         }
+//         if(original.equals(reverse)){
+//             System.out.println("string is palindrome :"+str);
+//         }else{
+//             System.out.println("string is not palindrome :"+str);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("ABA");
+//     }
+// }
+
+
+
 
 
 
