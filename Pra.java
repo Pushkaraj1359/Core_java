@@ -536,6 +536,47 @@ Output: olleh i ma avaj repoleved */
 
 
 
+// Problem: Remove the first letter of each word and append them at the end.
+// Input: hello i am java developer
+// Output: ello m ava eveloperhiajd
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+//         String firstChars = "";
+//         String rest = "";
+
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             if(word.length()>1){
+//                 firstChars = firstChars + word.charAt(0);
+//                 rest = rest + word.substring(1);
+//             }
+//             else{
+//                 firstChars = firstChars + word;
+//             }
+//         }
+//         System.out.print(rest.trim()+firstChars+" ");
+//     }
+//     public static  void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+
+
+
+// Problem: In each word, replace vowels with increasing count (starting from 1 per word).
+// Input: hello i am java developer
+// Output: h1ll2 1 1m j1v2 d1v2l3p4r
+
+
+
+
+
 
 
 
