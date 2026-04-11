@@ -753,7 +753,7 @@ class Pra{
         String ones = "";
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if(ch == '0'){
+            if(ch == 0){
                 zeros = zeros + ch;
             }
             else{
