@@ -604,6 +604,35 @@ Output: olleh i ma avaj repoleved */
 
 
 
+// Problem: Remove vowels from sentence and append them at end, preserving spaces.
+// Input: hello i am java developer
+// Output: hll  m jv dvlpr eoiaaaeeoe
+
+
+class Pra{
+    static void operation(String str){
+        String vowels = "";
+        String rest ="";
+
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            if("aeiouAEIOU".indexOf(ch) != -1){
+                vowels = vowels + ch;
+            }
+            else{
+                rest = rest + ch;
+            }
+        }
+        System.out.print(rest+" "+vowels);
+    }
+    public static void main(String[] args){
+        operation("hello i am java developer");
+    }
+}
+
+
+
+
 
 
 
