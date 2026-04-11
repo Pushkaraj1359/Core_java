@@ -427,17 +427,55 @@ Output: olleh i ma avaj repoleved */
 // Input: hello i am java developer
 // Output: hello1 i2 am3 java4 developer5
 
-class Pra{
-    static void operation(String str){
-        String[] arr = str.split(" ");
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+(i+1)+" ");
-        }
-    }
-    public static void main(String[] args) {
-        operation("hello i am java developer");
-    }
-}
+// class Pra{
+//     static void operation(String str){
+//         String[] arr = str.split(" ");
+//         for(int i=0;i<arr.length;i++){
+//             System.out.print(arr[i]+(i+1)+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+
+
+
+// Problem: Add length of each word at the end of the word.
+// Input: hello i am java developer
+// Output: hello5 i1 am2 java4 developer9
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+//         for(int i=0;i<words.length;i++){
+//             System.out.println(words[i]+words[i].length());
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+
+//     @Override
+//     public String toString() {
+//         return super.toString();
+//     }
+// }
+
+
+
+
+// Problem: Move first character of every word to the end
+// Input: hello i am java developer
+// Output: elloh i ma avaj eveloperd
+
+
+
+
 
 
 
