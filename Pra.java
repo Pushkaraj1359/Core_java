@@ -398,6 +398,31 @@ Output: i am java hello developer */
 
 
 
+/* Problem: Reverse each individual word in the sentence.
+
+Input: hello i am java developer
+
+Output: olleh i ma avaj repoleved */
+
+class Pra{
+    static void operation(String str){
+        String[] arr = str.split(" ");
+        for(int i=0;i<arr.length;i++){
+            String word = arr[i];
+            String reverse = "";
+            for(int j=word.length()-1;j>=0;j--){
+                reverse =  reverse + word.charAt(j);
+            }
+            System.out.print(reverse+" ");
+        }
+    }
+    public static void main(String[] args){
+        operation("hello i am java developer");
+    }
+}
+
+
+
 
 
 
