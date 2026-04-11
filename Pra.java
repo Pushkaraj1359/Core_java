@@ -1,4 +1,7 @@
 
+import inheritance.main;
+
+
 
 // public class Pra{
 
@@ -346,26 +349,52 @@
 
 
 
-class Pra{
-    static void alpha(String str){
-        String[] arr = str.split(" ");
-        for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[i].compareTo(arr[j])>0){
-                    String temp = arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-            }
-            for(String word : arr){
-                System.out.println(word+" ");
-            }
-        }
-    }
-    public static void main(String[] args) {
-        alpha("hello i am java developer");
-    }
-}
+// class Pra{
+//     static void alpha(String str){
+//         String[] arr = str.split(" ");
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[i].compareTo(arr[j])>0){
+//                     String temp = arr[i];
+//                     arr[i]=arr[j];
+//                     arr[j]=temp;
+//                 }
+//             }
+//             for(String word : arr){
+//                 System.out.println(word+" ");
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         alpha("hello i am java developer");
+//     }
+// }
+
+
+/*Problem: Sort words based on their length (shortest to longest).
+Input: hello i am java developer
+Output: i am java hello developer */
+
+// class Pra{
+//     static  void wordShort(String str){
+//         String[] arr = str.split(" ");
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[i].length()>arr[j].length()){
+//                     String temp = arr[i];
+//                     arr[i]=arr[j];
+//                     arr[j]=temp;
+//                 }
+//             }
+//         }
+//         for(String word : arr){
+//             System.out.print(word+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         wordShort("hello i am java developer");
+//     }
+// }
 
 
 
