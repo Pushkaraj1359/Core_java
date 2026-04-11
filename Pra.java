@@ -747,26 +747,29 @@ Output: olleh i ma avaj repoleved */
 
 
 
-class Pra{
-    static void operation(String str){
-        String zeros = "";
-        String ones = "";
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(ch == 0){
-                zeros = zeros + ch;
-            }
-            else{
-                ones = ones + ch;
-            }
-        }
-        String result  = zeros + ones;
-        System.out.print(result);
-    }
-    public static void main(String[] args) {
-        operation("0101010101");
-    }
-}
+// class Pra{
+//     static void operation(String str){
+//         String zeros = "";
+//         String ones = "";
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(ch == 0){
+//                 zeros = zeros + ch;
+//             }
+//             else{
+//                 ones = ones + ch;
+//             }
+//         }
+//         String result  = zeros + ones;
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args) {
+//         operation("0101010101");
+//     }
+// }
+
+
+
 
 
 
