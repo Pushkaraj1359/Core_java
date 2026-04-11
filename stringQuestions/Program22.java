@@ -59,31 +59,5 @@ public class Program22 {
         // }
         // System.out.println(result);
 
-
-        String str = "hello i am java developer";
-        String[] words = str.split(" ");
-
-        String result = "";
-
-        for(int i=0;i<words.length;i++){
-            String word = words[i];
-            String newWord = "";
-            for(int j=0;j<word.length();j++){
-                char ch = word.charAt(j);
-                if(ch ==' '){
-                    newWord = newWord + " ";
-                }
-                else if("aeiouAEIOU".indexOf(ch) != -1){
-                    char up = Character.toUpperCase(ch);
-                    newWord = newWord + up;
-                }
-                else{
-                    newWord = newWord + ch;
-                }
-            }
-            result = result + newWord + " ";
-        }
-        System.out.print(result);
-
     }
 }

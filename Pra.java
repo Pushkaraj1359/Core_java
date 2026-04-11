@@ -1,5 +1,6 @@
 
 import inheritance.main;
+import javax.lang.model.util.ElementScanner14;
 
 
 
@@ -609,26 +610,120 @@ Output: olleh i ma avaj repoleved */
 // Output: hll  m jv dvlpr eoiaaaeeoe
 
 
+// class Pra{
+//     static void operation(String str){
+//         String vowels = "";
+//         String rest ="";
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if("aeiouAEIOU".indexOf(ch) != -1){
+//                 vowels = vowels + ch;
+//             }
+//             else{
+//                 rest = rest + ch;
+//             }
+//         }
+//         System.out.print(rest+" "+vowels);
+//     }
+//     public static void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+
+// Q21. Capitalize First Letter of Each Word
+
+// Problem: Capitalize the first letter of every word.
+// Input: hello i am java developer
+// Output: Hello I Am Java Developer
+
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+
+//         String result = "";
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             char firstChar = Character.toUpperCase(word.charAt(0));
+//             String rest = word.substring(1);
+//             result = result + firstChar + rest + " ";
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args){
+//         operation("Hello I Am Java Developer");
+//     }
+// }
+
+
+
+
+// Problem: Convert only the vowels to uppercase in the sentence.
+// Input: hello i am java developer
+// Output: hEllO I Am jAvA dEvElOpEr
+
+
+
+// class Pra{
+//     static void opetation(String str){
+//         String[] words = str.split(" ");
+
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             String newWord = "";
+
+//             for(int j=0;j<word.length();j++){
+//                 char ch = word.charAt(j);
+
+//                 if("aeiouAEIOU".indexOf(ch) != -1){
+//                     char op = Character.toUpperCase(ch);
+//                     newWord = newWord + op;
+//                 }
+//                 else{
+//                     newWord = newWord + ch;
+//                 }
+//             }
+//             System.out.print(newWord+" ");
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+// }
+
+
+
+
+// Problem: Count characters that are neither letters nor digits nor spaces.
+// Input: hello? where are you!! i am fine!! thank you,.
+
 class Pra{
     static void operation(String str){
-        String vowels = "";
-        String rest ="";
-
+        int count = 0 ;
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if("aeiouAEIOU".indexOf(ch) != -1){
-                vowels = vowels + ch;
-            }
-            else{
-                rest = rest + ch;
+            if(!Character.isDigit(ch) && !Character.isLetter(ch) && ch != ' '){
+                count++;
             }
         }
-        System.out.print(rest+" "+vowels);
+        System.out.print(count);
     }
+
     public static void main(String[] args){
-        operation("hello i am java developer");
+        operation("Input: hello? where are you!! i am fine!! thank you,.");
     }
 }
+
+
+
+
+
+
 
 
 

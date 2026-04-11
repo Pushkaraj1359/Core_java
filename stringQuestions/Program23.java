@@ -12,18 +12,18 @@ public class Program23 {
     public static void main(String[] args) {
     
     // Method 01
-        String str = "welcome to 2024";
-        int sum = 0;
+        // String str = "welcome to 2024";
+        // int sum = 0;
         
-        for(int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+        // for(int i = 0; i < str.length(); i++) {
+        //     char ch = str.charAt(i);
         
-            if(Character.isDigit(ch)) {
-                sum = sum + (ch - '0');
-            }
-        }
+        //     if(Character.isDigit(ch)) {
+        //         sum = sum + (ch - '0');
+        //     }
+        // }
         
-        System.out.println(sum);
+        // System.out.println(sum);
         
 
     // Method 02
@@ -37,25 +37,29 @@ public class Program23 {
         // }
         
         // System.out.println(sum);
+
         
+        // String str = "hello234";
+        // char[] chars = str.toCharArray();
+        // int sum = 0 ;
+
+        // for(int i=0;i<chars.length;i++){
+        //     char ch = chars[i];
+        //     if(Character.isDigit(ch)){
+        //         sum = sum + (ch-'0');
+        //     }
+        // }
+        // System.out.print(sum);
+
+
+        String str = "hello222";
+        int sum = 0;
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            if(Character.isDigit(ch)){
+                sum = sum + (ch-'0');
+            }
+        }
+        System.out.print(sum);
     }
 }
-
-
-
-
-
-
-// sum = sum + (ch - '0');
-
-// Why (ch - '0')?
-
-// Because:
-
-// Character '2' ASCII value is 50
-
-// Character '0' ASCII value is 48
-
-// 50 - 48 = 2 ✔
-
-// So we convert character digit → integer digit.
