@@ -574,6 +574,34 @@ Output: olleh i ma avaj repoleved */
 // Output: h1ll2 1 1m j1v2 d1v2l3p4r
 
 
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             int count = 1;
+//             String newString = "";
+    
+
+//             for(int j=0;j<word.length();j++){
+//                 char ch = word.charAt(j);
+//                 if("aeiouAEIOU".indexOf(ch) != -1){
+//                     newString = newString + count;
+//                     count++;
+//                 }else{
+//                     newString = newString + ch;
+//                 }
+//             }
+//             System.out.print(newString+" ");
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("hello i am java developer");
+//     }
+// }
+
+
 
 
 
