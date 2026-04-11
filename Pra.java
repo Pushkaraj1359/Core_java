@@ -349,11 +349,16 @@
 class Pra{
     static void alpha(String str){
         String[] arr = str.split(" ");
-        for(int i=0;i<str.length();i++){
-            for(int j=i+1;j<str.length();j++){
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
                 if(arr[i].compareTo(arr[j])>0){
-                    
+                    String temp = arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
                 }
+            }
+            for(String word : arr){
+                System.out.println(word+" ");
             }
         }
     }
