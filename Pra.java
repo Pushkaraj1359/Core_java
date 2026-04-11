@@ -702,23 +702,71 @@ Output: olleh i ma avaj repoleved */
 // Problem: Count characters that are neither letters nor digits nor spaces.
 // Input: hello? where are you!! i am fine!! thank you,.
 
+// class Pra{
+//     static void operation(String str){
+//         int count = 0 ;
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(!Character.isDigit(ch) && !Character.isLetter(ch) && ch != ' '){
+//                 count++;
+//             }
+//         }
+//         System.out.print(count);
+//     }
+
+//     public static void main(String[] args){
+//         operation("Input: hello? where are you!! i am fine!! thank you,.");
+//     }
+// }
+
+
+
+// Problem: Remove all special characters, keeping letters, digits, and spaces only.
+// Input: hello? where are you!! i am fine!! thank you,.
+// Output: hello where are you i am fine thank you
+
+
+// class Pra{
+//     static void operation(String str){
+//         String result = "";
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(Character.isDigit(ch) || Character.isLetter(ch) || ch == ' '){
+//                 result = result + ch;
+//             }
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args){
+//         operation("hello? where are you!! i am fine!! thank you,.");
+//     }
+// }
+
+
+
+
+
+
 class Pra{
     static void operation(String str){
-        int count = 0 ;
+        String zeros = "";
+        String ones = "";
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if(!Character.isDigit(ch) && !Character.isLetter(ch) && ch != ' '){
-                count++;
+            if(ch == '0'){
+                zeros = zeros + ch;
+            }
+            else{
+                ones = ones + ch;
             }
         }
-        System.out.print(count);
+        String result  = zeros + ones;
+        System.out.print(result);
     }
-
-    public static void main(String[] args){
-        operation("Input: hello? where are you!! i am fine!! thank you,.");
+    public static void main(String[] args) {
+        operation("0101010101");
     }
 }
-
 
 
 
