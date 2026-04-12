@@ -1054,6 +1054,9 @@ Output: olleh i ma avaj repoleved */
 
 
 
+
+
+
     // Highest frequency
     
 
@@ -1081,37 +1084,115 @@ Output: olleh i ma avaj repoleved */
         //         operation("bbcsaaa");
         //     }
         // }
+
+
+    
+
+
+
+    
         
+        // class Pra{
+        //     static void operation(String str){
+        //         int min =  str.length();
+        //         char res = ' ';
+        //         for(int i=0;i<str.length();i++){
+        //             char ch1 = str.charAt(i);
+        //             int count = 0;
+        //             for(int j=0;j<str.length();j++){
+        //                 char ch2 = str.charAt(j);
+        //                 if(ch1==ch2){
+        //                     count++;
+        //                 }
+        //             }
+        //             if(count<min){
+        //                 min = count;
+        //                 res = str.charAt(i);
+        //             }
+        //         }
+        //         System.out.print(min +" ----> "+res);
+        //     }
+        //     public static void main(String[] args) {
+        //         operation("bbccdaaaaa");
+        //     }
+        // }
+
+
+        // class Pra{
+        //     static void operation(String str){
+        //         String zeros = "";
+        //         String res = "";
+        //         for(char ch  : str.toCharArray()){
+        //             if(ch=='0'){
+        //                 zeros += ch;
+        //             }else{
+        //                 res +=ch;
+        //             }
+        //         }
+        //         String result = res + zeros; 
+        //         System.out.println(result);
+        //     }
+        //     public static void main(String[] args) {
+        //         operation("1240356090");
+        //     }
+        // }
+
+
+
+
+
+
+
+// Problem statement : input vaibhav   output v2a2i1b1h1
+
+
+
+// class Pra{
+//     static void operation(String str){
+
+//         // Method 01
+//         // char[] ch = str.toCharArray();
+//         // boolean[] visited = new boolean[256];
+//         // int[] count = new int[256];
+//         // for(int i = 0; i<ch.length; i++){
+//         //     count[ch[i]]++;
         
+//         // for(int j = 0; j<ch.length; j++){
+//         //     if(ch[i]==ch[j]){
+//         //         System.out.println(ch[i]);
+//         //         System.out.println(count[ch[i]]);
+//         //         visited[ch[i]]=true;
+
+//         //     }
+//         // }
+
+
+
+
+
+//         // method 02
+
+//         int[] freq = new int[256];
         
-        
-        
+//         // count frequency 
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
 
-        
-        class Pra{
-            static void operation(String str){
-                int max = 0;
-                char res = ' ';
-                for(int i=0;i<str.length();i++){
-                    char ch1=str.charAt(i);
-                    
-                }
-            }
-            public static void main(String[] args) {
-                operation("bbccdaaaaa");
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
+//         // print without duplicate
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(freq[ch] != 0){
+//                 System.out.print(ch+" "+freq[ch]);
+//                 freq[ch]=0;
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("vaibhav");
+//     }
+// }
 
 
 
@@ -1119,12 +1200,130 @@ Output: olleh i ma avaj repoleved */
 
 // class Pra{
 //     static void operation(String str){
-        
+//         int[] freq = new int[256];
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
+
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(freq[ch] != 0){
+//                 System.out.print(ch+" "+freq[ch]);
+//                 freq[ch] = 0;
+
+//             }
+//         }
 //     }
-//     public static void main(String[] args) {
-//         operation();
+
+//     public static void main(String[] args){
+//         operation("vaibhav");
 //     }
 // }
+
+
+
+// minimum frequence + perticular character print
+
+// class Pra{
+//     static void operation(String str){
+//         int min = str.length()-1;
+//         char res = ' ';
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             int count = 0;
+//             for(int j=0;j<str.length();j++){
+//                 char ch1 = str.charAt(j);
+//                 if(ch==ch1){
+//                     count++;
+//                 }
+//             }
+//             if(min>count){
+//                 min = count;
+//                 res = str.charAt(i);
+//             }
+//         }
+//         System.out.print(res+" "+min);
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbc");
+//     }
+// }
+
+
+
+// mixmum frequence + perticular character print
+
+class Pra{
+    static void operation(String str){
+        int mix = 0;
+        char res = ' ';
+
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+
+
+
+            boolean visited = false;
+            for(int k = 0; k < i; k++) {
+                if(str.charAt(k) == ch) {
+                    visited = true;
+                    break;
+                }
+            }
+            if(visited) continue;
+
+
+            
+
+
+            int count = 0;
+            for(int j=0;j<str.length();j++){
+                char ch1 = str.charAt(j);
+                if(ch==ch1) count++;
+                
+            }
+            if(count>mix){
+                mix=count;
+                res = str.charAt(i);
+            }
+        }
+        System.out.print(mix+" "+res);
+    }
+    public static void main(String[] args){
+        operation("aaabbc");
+    }
+}
+
+
+
+
+// class Pra{
+//     static void operation(String str){
+//         int[] freq = new int[256];
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
+
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(freq[ch] != 0){
+//                 System.out.println(ch+" "+freq[ch]);
+//                 freq[ch] = 0;
+//             }
+//         }
+//     }
+//     public static void main(String args){
+//         operation("aaabbc");
+//     }
+// }
+
+
 
 
 
