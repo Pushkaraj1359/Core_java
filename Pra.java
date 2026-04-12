@@ -1147,52 +1147,55 @@ Output: olleh i ma avaj repoleved */
 
 
 
-// class Pra{
-//     static void operation(String str){
+class Pra{
+    static void operation(String str){
 
-//         // Method 01
-//         // char[] ch = str.toCharArray();
-//         // boolean[] visited = new boolean[256];
-//         // int[] count = new int[256];
-//         // for(int i = 0; i<ch.length; i++){
-//         //     count[ch[i]]++;
+        // Method 01
+        // char[] ch = str.toCharArray();
+        // boolean[] visited = new boolean[256];
+        // int[] count = new int[256];
+        // for(int i = 0; i<ch.length; i++){
+        //     count[ch[i]]++;
         
-//         // for(int j = 0; j<ch.length; j++){
-//         //     if(ch[i]==ch[j]){
-//         //         System.out.println(ch[i]);
-//         //         System.out.println(count[ch[i]]);
-//         //         visited[ch[i]]=true;
+        // for(int j = 0; j<ch.length; j++){
+        //     if(ch[i]==ch[j]){
+        //         System.out.println(ch[i]);
+        //         System.out.println(count[ch[i]]);
+        //         visited[ch[i]]=true;
 
-//         //     }
-//         // }
-
-
+        //     }
+        // }
 
 
 
-//         // method 02
 
-//         int[] freq = new int[256];
+
+        // method 02
+
+        int[] freq = new int[256];
         
-//         // count frequency 
-//         for(int i=0;i<str.length();i++){
-//             char ch = str.charAt(i);
-//             freq[ch]++;
-//         }
+        // count frequency 
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            freq[ch]++;
+        }
 
-//         // print without duplicate
-//         for(int i=0;i<str.length();i++){
-//             char ch = str.charAt(i);
-//             if(freq[ch] != 0){
-//                 System.out.print(ch+" "+freq[ch]);
-//                 freq[ch]=0;
-//             }
-//         }
-//     }
-//     public static void main(String[] args) {
-//         operation("vaibhav");
-//     }
-// }
+        // print without duplicate
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            if(freq[ch] != 0){
+                System.out.print(ch+" "+freq[ch]);
+                freq[ch]=0;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        operation("vaibhav");
+    }
+}
+
+
+
 
 
 
