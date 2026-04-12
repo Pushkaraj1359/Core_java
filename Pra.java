@@ -910,14 +910,7 @@ Output: olleh i ma avaj repoleved */
 // }
 
 
-class Pra{
-    static void operation(String str){
-        
-    }
-    public static void main(String[] args){
-        operation("A1B2C3");
-    }
-}
+
 
 
 
