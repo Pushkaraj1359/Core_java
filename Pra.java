@@ -833,6 +833,98 @@ Output: olleh i ma avaj repoleved */
 
 
 
+// Count vowels and consonants
+
+
+// class Pra{
+//     static void operation(String str){
+//         int v = 0;
+//         int c = 0;
+//         for(char ch : str.toCharArray()){
+//             if(Character.isLetter(ch)){
+//                 if("aeiouAEIOU".indexOf(ch) != -1)  v++;
+//                 else c++;
+//             }
+//         }
+//         System.out.println("vowels :"+v +" "+ "consonants:" +c);
+//     }
+//     public static void main(String[] args){
+//         operation("aEbbb");
+//     }
+// }
+
+
+
+
+
+
+// Remove special characters
+
+
+// class Pra{
+//     static void operation(String str){
+//         String result = "";
+//         for(char ch : str.toCharArray()){
+//             if(Character.isLetterOrDigit(ch)){
+//                 result = result + ch;
+//             }   
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args) {
+//         operation( "a1@b2#c3");
+//     }
+// }
+
+
+
+
+
+
+
+
+// Reverse only letters
+
+// class Pra{
+//     static void operation(String str){
+//         String letters = "";
+//         String result = "";
+//         for(char ch : str.toCharArray()){
+//             if(Character.isLetter(ch)){
+//                 letters = ch + letters;
+//             }
+//         }
+//         int j = 0;
+//         for(char ch : str.toCharArray()){
+//             if(Character.isLetter(ch)){
+//                 result = result + letters.charAt(j++);
+//             }else{
+//                 result = result + ch;
+//             }
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args){
+//         operation("a1b2c3");
+//     }
+// }
+
+
+class Pra{
+    static void operation(String str){
+        
+    }
+    public static void main(String[] args){
+        operation("A1B2C3");
+    }
+}
+
+
+
+
+
+
+
 
 
 
