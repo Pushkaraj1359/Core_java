@@ -1227,75 +1227,75 @@ Output: olleh i ma avaj repoleved */
 
 // minimum frequence + perticular character print
 
-// class Pra{
-//     static void operation(String str){
-//         int min = str.length()-1;
-//         char res = ' ';
-//         for(int i=0;i<str.length();i++){
-//             char ch = str.charAt(i);
-//             int count = 0;
-//             for(int j=0;j<str.length();j++){
-//                 char ch1 = str.charAt(j);
-//                 if(ch==ch1){
-//                     count++;
-//                 }
-//             }
-//             if(min>count){
-//                 min = count;
-//                 res = str.charAt(i);
-//             }
-//         }
-//         System.out.print(res+" "+min);
-//     }
-//     public static void main(String[] args){
-//         operation("aaabbc");
-//     }
-// }
+class Pra{
+    static void operation(String str){
+        int min = str.length()-1;
+        char res = ' ';
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            int count = 0;
+            for(int j=0;j<str.length();j++){
+                char ch1 = str.charAt(j);
+                if(ch==ch1){
+                    count++;
+                }
+            }
+            if(min>count){
+                min = count;
+                res = str.charAt(i);
+            }
+        }
+        System.out.print(res+" "+min);
+    }
+    public static void main(String[] args){
+        operation("pushkaraj");
+    }
+}
 
 
 
 // mixmum frequence + perticular character print
 
-class Pra{
-    static void operation(String str){
-        int mix = 0;
-        char res = ' ';
+// class Pra{
+//     static void operation(String str){
+//         int mix = 0;
+//         char res = ' ';
 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-
-
-
-            boolean visited = false;
-            for(int k = 0; k < i; k++) {
-                if(str.charAt(k) == ch) {
-                    visited = true;
-                    break;
-                }
-            }
-            if(visited) continue;
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
 
 
-            
+
+//             boolean visited = false;
+//             for(int k = 0; k < i; k++) {
+//                 if(str.charAt(k) == ch) {
+//                     visited = true;
+//                     break;
+//                 }
+//             }
+//             if(visited) continue;
 
 
-            int count = 0;
-            for(int j=0;j<str.length();j++){
-                char ch1 = str.charAt(j);
-                if(ch==ch1) count++;
+
+
+
+//             int count = 0;
+//             for(int j=0;j<str.length();j++){
+//                 char ch1 = str.charAt(j);
+//                 if(ch==ch1) count++;
                 
-            }
-            if(count>mix){
-                mix=count;
-                res = str.charAt(i);
-            }
-        }
-        System.out.print(mix+" "+res);
-    }
-    public static void main(String[] args){
-        operation("aaabbc");
-    }
-}
+//             }
+//             if(count>mix){
+//                 mix=count;
+//                 res = str.charAt(i);
+//             }
+//         }
+//         System.out.print(mix+" "+res);
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbc");
+//     }
+// }
 
 
 
