@@ -792,6 +792,42 @@ Output: olleh i ma avaj repoleved */
 
 
 
+// Toggle case
+
+// class Pra{
+//     static void operation(String str){
+//         String result ="";
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             result += Character.isLowerCase(ch) ? Character.toUpperCase(ch) : Character.toLowerCase(ch);
+//         }
+//         System.out.println(result);
+//     }
+//     public static void main(String[] args){
+//         operation("abcdABCD");
+//     }
+// }
+
+
+// class Pra{
+//     static void operation(String str){
+//         String result = "";
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(Character.isLowerCase(ch)){
+//                 result += Character.toUpperCase(ch);
+//             }else{
+//                 result += Character.toLowerCase(ch);
+//             }
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args){
+//         operation("abcdABCD");
+//     }
+// }
+
+
 
 
 
