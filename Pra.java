@@ -910,6 +910,197 @@ Output: olleh i ma avaj repoleved */
 // }
 
 
+// . Count alphabets, digits, special
+// class Pra{
+//     static void operation(String str){
+//         char[] chars = str.toCharArray();
+//         int c= 0 , d =0 ,s=0;
+//         for(int i=0;i<chars.length;i++){
+//             char ch = chars[i];
+//             if(Character.isLetter(ch)){
+//                 c++;
+//             }
+//             else if(Character.isDigit(ch)){
+//                 d++;
+//             }
+//             else{
+//                 s++;
+//             }
+//         }
+//         System.out.print(s+" "+c+" "+d);
+//     }
+//     public static void main(String[] args){
+//         operation("a1@b2");
+//     }
+// }
+
+
+
+// count the number of words
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+//         System.out.println(words.length);
+//     }
+//     public static void main(String[] args) {
+//         operation("i love java");
+//     }
+// }
+
+
+
+
+
+// reverse string
+
+// class Pra{
+//     static void operation(String str){
+//         String reverse = "";
+//         for(int i=str.length()-1;i>=0;i--){
+//             reverse = reverse + str.charAt(i);
+//         }
+//         System.out.println(reverse);
+//     }
+
+//     public static void main(String[] args) {
+    //         operation("abcd");
+    //     }
+    // }
+    
+    
+    
+    
+    
+    // Palindrome
+    
+    // class Pra{
+    //     static void operation(String str){
+    //         String original =str;
+    //         String reverse = "";
+    //         char[] chars = str.toCharArray();
+    //         for(int i=chars.length-1;i>=0;i--){
+    //             reverse = reverse + chars[i];
+    //         }
+    //         if(original.equals(reverse)){
+    //             System.out.println("string is palindrome :");
+    //         }else{
+    //             System.out.println("String is not palindrime :");
+    //         }
+    //     }
+
+    //     public static void main(String[] args) {
+    //         operation("madam");
+    //     }
+    // }
+
+
+
+    // reverse sentance 
+
+
+    // class Pra{
+    //     static void operation(String str){
+    //         String output ="";
+    //         String[] words = str.split(" ");
+    //         for(int i=words.length-1;i>=0;i--){
+    //             output = output + words[i]+" ";
+    //         }
+    //         System.out.println(output.trim());
+    //     }
+    //     public static void main(String[] args) {
+    //         operation("hello , pushkaraj");
+    //     }
+    // }
+
+
+
+    // All occurrences count
+
+    // class Pra{
+    //     static void operation(String str){
+    //         char[] chars = str.toCharArray();
+    //         int count = 0;
+    //         for(int i=0;i<chars.length;i++){
+    //             char ch = chars[i];
+    //             if(ch == 'a'){
+    //                 count++;
+    //             }
+    //         }
+    //         System.out.print(count);
+
+    //     }
+    //     public static void main(String[] args) {
+    //         operation("aabacd");
+    //     }
+    // }
+
+
+    // All occurrences
+
+    // class Pra{
+    //     static void operation(String str){
+    //         char[] chars = str.toCharArray();
+    //         for(int i=0;i<chars.length;i++){
+    //             char ch = chars[i];
+    //             if(ch == 'a'){
+    //                 System.out.print(ch+" ");
+    //             }
+    //         }
+    //     }
+    //     public static void main(String[] args) {
+    //         operation("aabacd");
+    //     }
+    // }
+
+
+
+    // Highest frequency
+    
+
+    // class Pra{
+    //     static void operation(String str){
+    //         int max  = 0;
+    //         char res = ' ';
+    //         for(int i=0;i<str.length();i++){
+    //             char ch1 = str.charAt(i);
+    //             int count = 0;
+    //             for(int j=0;j<str.length();j++){
+    //                 char ch2 = str.charAt(j);
+    //                 if(ch1 == ch2){
+    //                     count++;
+    //                 }
+    //             }
+    //             if(count > max){
+    //                 max = count;
+    //                 res = str.charAt(i);
+    //             }
+    //         }
+    //         System.out.println(max+" "+res);
+    //     }
+    //     public static void main(String[] args) {
+        //         operation("bbcsaaa");
+        //     }
+        // }
+        
+        
+        
+        
+        
+
+        
+        class Pra{
+            static void operation(String str){
+                int max = 0;
+                char res = ' ';
+                for(int i=0;i<str.length();i++){
+                    char ch1=str.charAt(i);
+                    
+                }
+            }
+            public static void main(String[] args) {
+                operation("bbccdaaaaa");
+            }
+        }
 
 
 
@@ -926,14 +1117,14 @@ Output: olleh i ma avaj repoleved */
 
 
 
-
-
-
-
-
-
-
-
+// class Pra{
+//     static void operation(String str){
+        
+//     }
+//     public static void main(String[] args) {
+//         operation();
+//     }
+// }
 
 
 
