@@ -1387,27 +1387,49 @@ class Pra{
 
 // Remove Nth Occurrence of a Character from a String
 
-class Pra{
-    static void operation(String str , char target, int n){
+// class Pra{
+//     static void operation(String str , char target, int n){
 
-        int count = 0;
+//         int count = 0;
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(ch==target){
+//                 count++;
+//                 if(count == n){
+//                     System.out.print("remove index:"+ i +" value"+ch);
+//                     continue;
+//                 }
+//             }
+//             System.out.print(ch);
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbc",'a',2);
+//     }
+// }
+
+
+class Pra{
+    static void operation(String str){
+        int[] freq = new int[256];
+
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if(ch==target){
-                count++;
-                if(count == n){
-                    System.out.print("remove index:"+ i +" value"+ch);
-                    continue;
+            freq[ch]++;
+        }
+
+        for(int i=0;i<str.length();i++){
+            char ch1 = str.charAt(i);
+                if(freq[ch1] != 0 ){
+                    System.out.print(ch1+" ");
+                    freq[ch1] = 0;
                 }
-            }
-            System.out.print(ch);
         }
     }
     public static void main(String[] args){
-        operation("aaabbc",'a',2);
+        operation("aaabbcccc");
     }
 }
-
 
 
 
