@@ -1016,26 +1016,43 @@ Output: olleh i ma avaj repoleved */
 
     // All occurrences count
 
+    // class Pra{
+    //     static void operation(String str){
+    //         char[] chars = str.toCharArray();
+    //         int count = 0;
+    //         for(int i=0;i<chars.length;i++){
+    //             char ch = chars[i];
+    //             if(ch == 'a'){
+    //                 count++;
+    //             }
+    //         }
+    //         System.out.print(count);
+
+    //     }
+    //     public static void main(String[] args) {
+    //         operation("aabacd");
+    //     }
+    // }
+
     class Pra{
         static void operation(String str){
             char[] chars = str.toCharArray();
             int count = 0;
             for(int i=0;i<chars.length;i++){
-                char ch = chars[i];
+                char ch = chars.charAt(i);
                 if(ch == 'a'){
                     count++;
                 }
             }
             System.out.print(count);
-
         }
-        public static void main(String[] args) {
-            operation("aabacd");
+        public static void main(String[] args){
+            operation("aaabbc");
         }
     }
 
 
-    
+
 
 
     // All occurrences
