@@ -1338,44 +1338,56 @@ class Pra{
 
 
 
-class Pra{
-    static void operation(String str, char targer){
-        boolean remove = false;
+// class Pra{
+//     static void operation(String str, char targer){
+//         boolean remove = false;
 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(ch == targer && remove == false){
-                remove = true;
-                continue;
-            }
-            System.out.print(ch+" ");
-        }
-    }
-    public static void main(String[] args) {
-        operation("vaibhav",'a');
-    }
-}
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(ch == targer && remove == false){
+//                 remove = true;
+//                 continue;
+//             }
+//             System.out.print(ch+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("vaibhav",'a');
+//     }
+// }
 
 
 
+
+
+// remove last occurance 
 
 class Pra{
     static void operation(String str,char target){
-        boolean remove = false;
+        int lastIndex = -1;
 
         for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(ch == target && !remove){
-                remove = true;
+            if(str.charAt(i) == target){
+                lastIndex = i;
+            }
+        }
+
+        for(int i=0;i<str.length();i++){
+            if(i == lastIndex){
                 continue;
             }
-            System.out.print(ch);
+            System.out.print(str.charAt(i)+" ");
+
         }
     }
     public static void main(String[] args) {
         operation("aaabbc",'a');
     }
 }
+
+
+
+
 
 
 
