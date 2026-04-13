@@ -1362,29 +1362,51 @@ class Pra{
 
 // remove last occurance 
 
+// class Pra{
+//     static void operation(String str , char target){
+//         int lastIndex = -1;
+//         for(int i=0;i<str.length();i++){
+//             if(str.charAt(i)  == target){
+//                 lastIndex=i;
+//             }
+//         }
+//         for(int i=0;i<str.length();i++){
+//             if(i == lastIndex){
+//                 System.out.println("removed index:"+i+" value: "+str.charAt(i));
+//                 continue;
+//             }
+//             System.out.print(str.charAt(i)+" ");
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbc",'a');
+//     }
+// }
+
+
+
+// Remove Nth Occurrence of a Character from a String
+
 class Pra{
-    static void operation(String str , char target){
-        int lastIndex = -1;
+    static void operation(String str , char target, int n){
+
+        int count = 0;
         for(int i=0;i<str.length();i++){
-            if(str.charAt(i)  == target){
-                lastIndex=i;
+            char ch = str.charAt(i);
+            if(ch==target){
+                count++;
+                if(count == n){
+                    System.out.print("remove index:"+ i +" value"+ch);
+                    continue;
+                }
             }
-        }
-        for(int i=0;i<str.length();i++){
-            if(i == lastIndex){
-                System.out.println("removed index:"+i+" value: "+str.charAt(i));
-                continue;
-            }
-            System.out.print(str.charAt(i)+" ");
+            System.out.print(ch);
         }
     }
     public static void main(String[] args){
-        operation("aaabbc",'a');
+        operation("aaabbc",'a',2);
     }
 }
-
-
-
 
 
 
