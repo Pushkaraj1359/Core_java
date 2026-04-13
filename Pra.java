@@ -1016,23 +1016,26 @@ Output: olleh i ma avaj repoleved */
 
     // All occurrences count
 
-    // class Pra{
-    //     static void operation(String str){
-    //         char[] chars = str.toCharArray();
-    //         int count = 0;
-    //         for(int i=0;i<chars.length;i++){
-    //             char ch = chars[i];
-    //             if(ch == 'a'){
-    //                 count++;
-    //             }
-    //         }
-    //         System.out.print(count);
+    class Pra{
+        static void operation(String str){
+            char[] chars = str.toCharArray();
+            int count = 0;
+            for(int i=0;i<chars.length;i++){
+                char ch = chars[i];
+                if(ch == 'a'){
+                    count++;
+                }
+            }
+            System.out.print(count);
 
-    //     }
-    //     public static void main(String[] args) {
-    //         operation("aabacd");
-    //     }
-    // }
+        }
+        public static void main(String[] args) {
+            operation("aabacd");
+        }
+    }
+
+
+    
 
 
     // All occurrences
@@ -1170,24 +1173,25 @@ class Pra{
 
 
 
-        // method 02
+        // // method 02
 
-        int[] freq = new int[256];
+        // int[] freq = new int[256];
         
-        // count frequency 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            freq[ch]++;
-        }
+        // // count frequency 
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+        //     freq[ch]++;
+        // }
 
-        // print without duplicate
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(freq[ch] != 0){
-                System.out.print(ch+" "+freq[ch]);
-                freq[ch]=0;
-            }
-        }
+        // // print without duplicate
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+        //     if(freq[ch] != 0){
+        //         System.out.print(ch
+        //         +" "+freq[ch]);
+        //         freq[ch]=0;
+        //     }
+        // }
     }
     public static void main(String[] args) {
         operation("vaibhav");
@@ -1230,30 +1234,30 @@ class Pra{
 
 // minimum frequence + perticular character print
 
-class Pra{
-    static void operation(String str){
-        int min = str.length()-1;
-        char res = ' ';
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            int count = 0;
-            for(int j=0;j<str.length();j++){
-                char ch1 = str.charAt(j);
-                if(ch==ch1){
-                    count++;
-                }
-            }
-            if(min>count){
-                min = count;
-                res = str.charAt(i);
-            }
-        }
-        System.out.print(res+" "+min);
-    }
-    public static void main(String[] args){
-        operation("pushkaraj");
-    }
-}
+// class Pra{
+//     static void operation(String str){
+//         int min = str.length()-1;
+//         char res = ' ';
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             int count = 0;
+//             for(int j=0;j<str.length();j++){
+//                 char ch1 = str.charAt(j);
+//                 if(ch==ch1){
+//                     count++;
+//                 }
+//             }
+//             if(min>count){
+//                 min = count;
+//                 res = str.charAt(i);
+//             }
+//         }
+//         System.out.print(res+" "+min);
+//     }
+//     public static void main(String[] args){
+//         operation("pushkaraj");
+//     }
+// }
 
 
 
@@ -1329,59 +1333,115 @@ class Pra{
 
 
 
+// remove first occurrence using freq logic
 
+// class Pra {
+//     static void operation(String str, char target) {
 
+//         int[] freq = new int[256];
 
+//         // count frequency
+//         for(int i = 0; i < str.length(); i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
 
+//         boolean removed = false;
 
+//         for(int i = 0; i < str.length(); i++){
+//             char ch = str.charAt(i);
 
+//             if(ch == target && !removed){
+//                 freq[ch]--;   // remove one occurrence
+//                 removed = true;
+//                 continue;
+//             }
 
+//             System.out.print(ch);
+//         }
+//     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     public static void main(String[] args) {
+//         operation("banana", 'a');
+//     }
+// }
 
 
 
 
 class Pra{
+    static void operation(String str, char targer){
+        boolean remove = false;
+
+        for(int i=0;i<str.length();i++){
+            char ch = str.charAt(i);
+            if(ch == targer && remove == false){
+                remove = true;
+                continue;
+            }
+            System.out.print(ch+" ");
+        }
+    }
     public static void main(String[] args) {
-        
+        operation("vaibhav",'a');
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Pra{
+//     public static void main(String[] args) {
+        
+//     }
+// }
