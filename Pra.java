@@ -1034,23 +1034,6 @@ Output: olleh i ma avaj repoleved */
     //     }
     // }
 
-    class Pra{
-        static void operation(String str){
-            char[] chars = str.toCharArray();
-            for(int i=0;i<chars.length;i++){
-                char ch = chars[i];
-                if(ch=='a'){
-                    System.out.println(ch+" ");
-                }
-            }
-        }
-        public static void main(String[] args){
-            operation("aaabbc");
-        }
-    }
-
-
-
 
 
     // All occurrences
@@ -1103,7 +1086,30 @@ Output: olleh i ma avaj repoleved */
         //     }
         // }
 
-
+    class Pra{
+        static void operation(String str){
+            int max = 0;
+            char res = ' ';
+            for(int i=0;i<str.length();i++){
+                char ch = str.charAt(i);
+                int count = 0;
+                for(int j=0;j<str.length();j++){
+                    char ch1 = str.charAt(j);
+                    if(ch == ch1){
+                        count++;
+                    }
+                }
+                if(count>max){
+                    max = count;
+                    res = str.charAt(i);
+                }
+            }
+            System.out.print(max+" "+res);
+        }
+        public static void main(String[] args) {
+            operation("abcbaa");
+        }
+    }
     
 
 
