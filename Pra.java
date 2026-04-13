@@ -1363,24 +1363,22 @@ class Pra{
 // remove last occurance 
 
 class Pra{
-    static void operation(String str,char target){
+    static void operation(String str , char target){
         int lastIndex = -1;
-
         for(int i=0;i<str.length();i++){
-            if(str.charAt(i) == target){
-                lastIndex = i;
+            if(str.charAt(i)  == target){
+                lastIndex=i;
             }
         }
-
         for(int i=0;i<str.length();i++){
             if(i == lastIndex){
+                System.out.println("removed index:"+i+" value: "+str.charAt(i));
                 continue;
             }
             System.out.print(str.charAt(i)+" ");
-
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         operation("aaabbc",'a');
     }
 }
