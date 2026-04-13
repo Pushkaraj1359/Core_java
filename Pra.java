@@ -1037,14 +1037,12 @@ Output: olleh i ma avaj repoleved */
     class Pra{
         static void operation(String str){
             char[] chars = str.toCharArray();
-            int count = 0;
             for(int i=0;i<chars.length;i++){
-                char ch = chars.charAt(i);
-                if(ch == 'a'){
-                    count++;
+                char ch = chars[i];
+                if(ch=='a'){
+                    System.out.println(ch+" ");
                 }
             }
-            System.out.print(count);
         }
         public static void main(String[] args){
             operation("aaabbc");
