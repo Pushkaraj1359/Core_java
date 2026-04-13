@@ -1167,23 +1167,23 @@ class Pra{
 
         // // method 02
 
-        int[] freq = new int[256]; // for all characters we wrote 256 here
+        // int[] freq = new int[256];
         
-        // count frequency 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            freq[ch]++;
-        }
+        // // count frequency 
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+        //     freq[ch]++;
+        // }
 
-        // print without duplicate
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(freq[ch] != 0){
-                System.out.print(ch
-                +" "+freq[ch]);
-                freq[ch]=0;
-            }
-        }
+        // // print without duplicate
+        // for(int i=0;i<str.length();i++){
+        //     char ch = str.charAt(i);
+        //     if(freq[ch] != 0){
+        //         System.out.print(ch
+        //         +" "+freq[ch]);
+        //         freq[ch]=0;
+        //     }
+        // }
     }
     public static void main(String[] args) {
         operation("vaibhav");
