@@ -1409,78 +1409,77 @@ class Pra{
 // }
 
 
-class Pra{
-    static void operation(String str){
-        int[] freq = new int[256];
-
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            freq[ch]++;
-        }
-
-        for(int i=0;i<str.length();i++){
-            char ch1 = str.charAt(i);
-                if(freq[ch1] != 0 ){
-                    System.out.print(ch1+" ");
-                    freq[ch1] = 0;
-                }
-        }
-    }
-    public static void main(String[] args){
-        operation("aaabbcccc");
-    }
-}
 
 
+// class Pra{
+//     static void operation(String str){
+//         int[] freq = new int[256];
 
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//         for(int i=0;i<str.length();i++){
+//             char ch1 = str.charAt(i);
+//                 if(freq[ch1] != 0 ){
+//                     System.out.print(ch1+" ");
+//                     freq[ch1] = 0;
+//                 }
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbcccc");
+//     }
+// }
 
 
 
 
 
 // class Pra{
+//     static void operation(String str,char targer){
+//         int lastIndex = -1;
+//         for(int i=0;i<str.length();i++){
+//             if(str.charAt(i) == targer){
+//                 lastIndex = i;
+//             }
+//         }
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             if(i== lastIndex){
+//                 System.out.println("removed index: "+i+" value:"+ch);
+//                 continue;
+//             }
+//             System.out.print(ch);
+//         }
+//     }
 //     public static void main(String[] args) {
-        
+//         operation("PUSHKARAJ",'a');
 //     }
 // }
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] op1 = str.trim().split("\\s+"); 
+//         String result = "";
+//         for(int i=0;i<op1.length();i++){
+//             result = result + op1[i]+" ";
+//         }
+//         String str1 = result.trim();
+//         System.out.print(str1);
+//     }
+//     public static void main(String[] args){
+//         operation(" Pushkaraj    Balika saurabh  Kulkarni   ");
+//     }
+// }
+
+
+class Pra{
+    public static void main(String[] args){
+        operation("pushkaraj");
+    }
+}
+
+
