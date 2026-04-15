@@ -1476,10 +1476,38 @@ class Pra{
 // }
 
 
+
+
+
 class Pra{
+    static void operation(String str){
+        // str = str.toLowerCase();
+        String[] words = str.split(" ");
+        String palinWord = "";
+        String result = "";
+
+        for(int i=0;i<words.length;i++){
+            String word = words[i];
+            String original = word;
+            String reverse = "";
+
+                for(int j=word.length()-1;j>=0;j--){
+                    reverse =  reverse + word.charAt(j);
+                    // System.out.println(reverse);
+                }
+                if(original.equals(reverse)){
+                    if(reverse .length() > result.length()){
+                        result = reverse;
+                    }
+                }
+            }
+            System.out.print("largest palindrome words is: "+result);
+    }
+
     public static void main(String[] args){
-        operation("pushkaraj");
+        String str1 = "Madam Arora saw a racecar near a level civic center while reading Malayalam stats.";
+        String str = str1.toLowerCase();
+        operation(str);
     }
 }
-
 
