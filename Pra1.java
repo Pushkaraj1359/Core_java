@@ -1,4 +1,4 @@
-// // public class Vaibhav{
+// // public class Pra1{
 // //     static void operation(String str){
 // //         char[] ch = str.toCharArray();
 // //         boolean[] visited = new boolean[256];
@@ -27,7 +27,7 @@
 
 
 
-// // class Pra {
+// // class Pra1 {
 
 // //     static void frequency(String str) {
 
@@ -59,7 +59,7 @@
 
 
 
-// class Vaibhav{
+// class Pra1{
 //     static void operation(String str){
 
 //         int mix = 0;
@@ -95,12 +95,30 @@
 
 
 
-class Vaibhav{
+class Pra1{
     static void operation(String str){
-
+            String[] words = str.split(" ");
+            String result ="";
+            
+            for(int i=0;i<words.length;i++){
+                String word = words[i];
+                String original  = word ;
+                String reverse = "";
+                for(int j=word.length()-1;j>=0;j--){
+                    reverse = reverse + word.charAt(j);
+                }
+                if(original.equals(reverse)){
+                    if(reverse.length() > result.length()){
+                        result  = reverse;
+                    }
+                }
+            }
+            System.out.print("largest palindrome: "+result);
     }
     public static void main(String[] args) {
-        operation("");
+        String str1 = "Madam Arora saw a racecar near a level civic center while reading Malayalam stats.";
+        String str = str1.toLowerCase();
+        operation(str);
     }
 }
 
