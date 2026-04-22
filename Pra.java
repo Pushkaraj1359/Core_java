@@ -18,6 +18,7 @@
 //         return -1;
 //     }
 
+
 //     public static void main(String[] args) {
 //         int arr[]={1,2,3,4,5,6,7,8,9};
 //         int ele = 8;
@@ -1142,8 +1143,8 @@ Output: olleh i ma avaj repoleved */
 
 
 
-class Pra{
-    static void operation(String str){
+// class Pra{
+//     static void operation(String str){
 
         // Method 01
         // char[] ch = str.toCharArray();
@@ -1184,11 +1185,11 @@ class Pra{
         //         freq[ch]=0;
         //     }
         // }
-    }
-    public static void main(String[] args) {
-        operation("vaibhav");
-    }
-}
+//     }
+//     public static void main(String[] args) {
+//         operation("vaibhav");
+//     }
+// }
 
 
 
@@ -1517,51 +1518,218 @@ class Pra{
 // Question 1) solve
 // remove dupliates
 
-class Pra{
-    static void removeDuplicate(String str){
-        int[] freq = new int[256];
+// class Pra{
+//     static void removeDuplicate(String str){
+//         int[] freq = new int[256];
 
-        for(int i=0;i<str.length();i++){
-            char ch1 = str.charAt(i);
-            freq[ch1]++;
-        }
+//         for(int i=0;i<str.length();i++){
+//             char ch1 = str.charAt(i);
+//             freq[ch1]++;
+//         }
 
-        for(int j=0;j<str.length();j++){
-            char ch2 = str.charAt(j);
-            if(freq[ch2] != 0){
-                System.out.print(ch2);
-                freq[ch2] = 0;
-            }
-        }
-    }
-    public static void main(String[] args) {
-        removeDuplicate(aabbc);
-    }
-}
+//         for(int j=0;j<str.length();j++){
+//             char ch2 = str.charAt(j);
+//             if(freq[ch2] != 0){
+//                 System.out.print(ch2);
+//                 freq[ch2] = 0;
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         removeDuplicate("aabbc");
+//     }
+// }
 
 
 // question 2) solve
 // check the stirng is ANAGRAM OR NOT
 
+// class Pra{
+//     static void operation(String str){
+//         int[] freq = new int[256];
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+//             freq[ch]++;
+//         }
+
+//         for(int j=0;j<str.length();j++){
+//             char ch1 =  str.charAt(j);
+//             if(freq[ch1] != 0){
+//                 System.out.print(ch1);
+//                 freq[ch1] = 0;
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         operation("programming");
+//     }
+// }
+
+
+// question 3) 
+// First Non-Repeating Character
+
+// 👉 Input: "aabbcdde"
+// 👉 Output: c
+
+
+// class Pra{
+//     static void operation(String str){
+//         int[] freq = new int[256];
+
+//         for(int i=0;i<str.length();i++){
+//             char ch1 = str.charAt(i);
+//             freq[ch1]++;
+//         }
+
+
+//         for(int j=0;j<str.length();j++){
+//             char ch2 = str.charAt(j);
+//             if(freq[ch2] == 1){
+//                 System.out.print("first non repecting character"+ch2);
+//                 break;
+//             }
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("aabbcdde");
+//     }
+// }
+
+
+
+// Question 4) Reverse Each Word in Sentence
+
+// 👉 Input: "Java is easy"
+// 👉 Output: "avaJ si ysae"
+
+
+// class Pra{
+//     static void operation(String str){
+//         String[] words = str.split(" ");
+//         String result = "";
+
+//         for(int i=0;i<words.length;i++){
+//             String word = words[i];
+//             String reverse = "";
+
+//             for(int j=word.length()-1;j>=0;j--){
+//                 char ch = word.charAt(j);
+//                 reverse = reverse + ch;
+//             }
+//             result = result + reverse+" ";
+//         }
+//         System.out.print(result);
+//     }
+//     public static void main(String[] args){
+//         operation("Java is easy");
+//     }
+// }
+
+
+
+
+
+// Question 5) Find Longest Word
+
+// 👉 Input: "Java is a powerful language"
+// 👉 Output: "powerful"
+
+// class Pra{
+//     static void findLongestWorld(String str){
+//         String[] words = str.split(" ");
+//         String longest = "";
+//         for(String word : words){
+//             if(word.length()>longest.length()){
+//                 longest = word;
+//             }
+//         }
+//         System.out.print("longest word along all sentance is:"+longest);
+//     }
+//     public static void main(String[] args){
+//         findLongestWorld("Java is a powerful language");
+//     }
+// }
+
+
+
+// // Remove All Spaces
+
+// // 👉 Input: "a b c d"
+// // 👉 Output: "abcd"
+
+// // class Pra{
+// //     static void operation(String str){
+// //         String result = str.replace(" ", "");
+// //         System.out.print(result);
+// //     }
+// //     public static void main(String[] args){
+// //         operation("a b c d");
+// //     }
+// // }
+
+// class Pra{
+//     static void operation(String str){
+//         char[] chars = str.toCharArray();
+//         String result  = "";
+
+//         for(int i=0;i<chars.length;i++){
+//             char ch = chars[i];
+//             if(ch!=' '){
+//                 result = result + ch;
+//             }
+//         }
+//         System.out.println(result);
+//     }
+//     public static void main(String[] args){
+//         operation("a b c d");
+//     }
+// }
+
+
+// Compress String (Basic)
+
+// 👉 Input: "aaabbc"
+// 👉 Output: "a3b2c1"
+
+// class Pra{
+//     static void operation(String str){
+//         int[] freq = new int[256];
+
+//         for(int i=0;i<str.length();i++){
+//             char ch1 = str.charAt(i);
+//             freq[ch1]++;
+//         }
+
+//         for(int j=0;j<str.length();j++){
+//             char ch2 = str.charAt(j);
+//             if(freq[ch2] != 0){
+//                 System.out.print(ch2+""+freq[ch2]);
+//                 freq[ch2] = 0;
+//             }
+//         }
+//     }
+//     public static void main(String[] args){
+//         operation("aaabbc");
+//     }
+// }
+
+
+// . Toggle Case (Upper ↔ Lower)
+
+// 👉 Input: "JaVa"
+// 👉 Output: "jAvA"
+
+
 class Pra{
     static void operation(String str){
-        int[] freq = new int[256];
+        char[] chars = str.toCharArray();
 
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            freq[ch]++;
-        }
-
-        for(int j=0;j<str.length();j++){
-            char ch1 =  str.charAt(j);
-            if(freq[ch1] != 0){
-                System.out.print(ch1);
-                freq[ch1] = 0;
-            }
-        }
+        for(int i=0;i)
     }
-    public static void main(String[] args) {
-        operation("programming");
+    public static void main(String[] agrs){
+        operation("JaVa");
     }
 }
 
@@ -1589,26 +1757,24 @@ class Pra{
 
 
 
+// class Pra{
+//     static void operation(String str1, String str2){
+//         char[] chars = str1.toCharArray();
+//         char[] chars1 = str2.toCharArray();
+
+//         Arrays.sort(chars);
+//         Arrays.sort(chars1);
+
+//         if(Arrays.equals(chars,chars1)){
+//             System.out.print("anagram");
+//         }
+//         else{
+//             System.out.print("not anagram");
+//         }
 
 
-class Pra{
-    static void operation(String str1, String str2){
-        char[] chars = str1.toCharArray();
-        char[] chars1 = str2.toCharArray();
-
-        Arrays.sort(chars);
-        Arrays.sort(chars1);
-
-        if(Arrays.equals(chars,chars1)){
-            System.out.print("anagram");
-        }
-        else{
-            System.out.print("not anagram");
-        }
-
-
-    }
-    public static void main(String[] args) {
-        operation("abc","cba");
-    }
-}
+//     }
+//     public static void main(String[] args) {
+//         operation("abc","cba");
+//     }
+// }
