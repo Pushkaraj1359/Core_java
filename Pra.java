@@ -31,6 +31,12 @@
 
 
 
+
+
+
+
+
+
 // Problem: Move the first character of the string to the end.
 // Input: India
 // Output: ndiaI
@@ -56,8 +62,6 @@
 //         firstToLast("abcd");
 //     }
 // }
-
-
 
 
 
@@ -91,6 +95,7 @@
 //         lastToFirst("abcd");
 //     }
 // }
+
 
 
 
