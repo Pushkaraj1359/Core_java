@@ -1,5 +1,19 @@
 
 
+
+/*============================== Mastering Java Strings: From Basics to Confidence ====================================================
+                                ===================================================
+
+This collection is designed to help you truly understand and master String concepts in Java. 
+It contains a variety of carefully selected problems along with clear and simple solutions. 
+Each problem is explained step by step, making it easy to learn, practice, and improve your coding skills.
+
+Whether you are a beginner or preparing for exams or interviews, 
+this file will guide you to build strong logic and confidence in solving String-related problems. 
+By the end, you won’t just memorize solutions—you’ll understand how to think and solve problems on your own.
+
+
+
 //     static int binarySearch(int arr[],int ele){
 //         int low=0;
 //         int high=arr.length;
@@ -134,6 +148,8 @@
 
 
 
+
+
 // Problem: Count the number of vowels in the string.
 // Input: Education
 
@@ -152,7 +168,6 @@
 //         countVowels("Education");
 //     }
 // }
-
 
 
 
@@ -183,6 +198,9 @@
 //         replaceVowelsWithNum("International");
 //     }
 // }
+
+
+
 
 
 
@@ -223,6 +241,10 @@
 
 
 
+
+
+
+
 // Problem: Separate consonants and vowels. Keep consonants in order and append sorted vowels.
 // Input: International
 // Output: ntrntnlAaeio
@@ -253,8 +275,6 @@
 //         separateConsVowels("International");
 //     }
 // }
-
-
 
 
 
@@ -1783,3 +1803,4 @@ class Pra{
 //         operation("abc","cba");
 //     }
 // }
+

@@ -22,8 +22,7 @@ class Data{
         System.out.println("Double  "+dl);
         System.out.println("Strig  "+s);
     }
-
-    }
+}
 
 public class DataType{
 	public static void main(String[] args) {
